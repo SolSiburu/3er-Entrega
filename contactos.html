@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ccs/style.css" />
+    <title>Farmacia Mc Clymont</title>
+  </head>
+  <body>
+    <!-- !Inicio header + Navegador -->
+    <header class="navegacion_principal_header">
+      <img
+        class="navegacion_principal_header_logo"
+        src="./img/LOGOMCCLYMONT.png"
+        alt="LOGO MC CLYMONT"
+      />
+      <nav class="navegacion_principal_nav">
+        <ul>
+          <li>
+            <a class="navegacion_a" href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="navegacion_a" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li>
+            <a class="navegacion_a" href="./contactos.html">Contacto</a>
+          </li>
+          <li>
+            <a class="navegacion_a" href="./cuidadopersonal.html">CuidadoPersonal</a>
+            <ul>
+              <li>
+                <a class="navegacion_sub" href="">Cabello</a>
+              </li>
+              <li>
+                <a class="navegacion_sub" href="">Higiene Bucal </a>
+              </li>
+              <li>
+                <a class="navegacion_sub" href="">Higiene Personal</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="navegacion_a" href="./medicamentos.html">Medicamentos</a>
+            <ul>
+              <li>
+                <a class="navegacion_sub" href="">Con Obra Social</a>
+              </li>
+              <li>
+                <a class="navegacion_sub" href="">Particular</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="whatsapp">
+        <img
+          src="./img/WhatsApp.svg.webp"
+          alt="Whatsapp"
+          width="100"
+          ;
+          height="100"
+        />
+      </div>
+    </header>
+    <!-- !Fin header + Navegador -->
+    <!-- !Inicio contenido contactos -->
+    <section class="seccion_contactos">
+      <article>
+        <form class="contactos_principal" action="">
+          <label class="contactos_descripcion" for="name"
+            >Nombre y Apellido</label
+          >
+          <input class="input"
+            type="text"
+            name="name"
+            placeholder="Nombre y Apellido completo"
+          />
+          <label class="contactos_descripcion" for="email"
+            >Correo Electrónico</label
+          >
+          <input class="input" type="email" name="email" placeholder="Email" />
+          <label class="contactos_descripcion" for="password">Contraseña</label>
+          <input class="input" type="password" name="password" placeholder="Contraseña" />
+          <label class="contactos_descripcion" for="message">Mensaje</label>
+          <textarea name="" id="" cols="50" rows="5"></textarea>
+          <label class="contactos_descripcion" for="compra">Particular</label>
+          <input class="input" type="radio" name="Particular" value="Particular" />
+          <label class="contactos_descripcion" for="compra">Obra Social</label>
+          <input class="input" type="radio" name="compra" value="Con Obra Social" />
+          <label class="contactos_descripcion" for="location">Localidad</label>
+          <select name="location" id="">
+            <option class="localidad" value=""></option>
+            <option class="localidad" value="rosario">Rosario</option>
+            <option class="localidad" value="funes">Funes</option>
+            <option class="localidad" value="pueblo esther">Pueblo Esther</option>
+          </select>
+          <input class="enviar"type="reset" value="Limpiar Formulario" />
+          <input  class="enviar"type="button" value="No hacer nada" />
+          <label class="contactos_descripcion" for="acept"
+            >Acepta términos y condiciones</label
+          >
+          <input class="checkbox" type="checkbox" name="acept" value="si" />
+          <input class="enviar_formulario" type="submit" value="Enviar Formulario" />
+        </form>
+      </article>
+    </section>
+        <!-- Inicio Footer -->
+        <footer class="footer_principal_contactos">
+          <img
+            class="footer_principal_imagen_logo"
+            src="./img/LOGOMCCLYMONT.png"
+            alt="LOGO MC CLYMONT"
+          />
+          <p class="footer_principal_texto_contacto">
+            Salta 2398 Rosario Santa Fe Tel.0341-4392110
+          </p>
+          <img
+            class="fOOter_principal_imagen_instagram"
+            src="./img/LOGOMCCLYMONTINSTAG.png"
+            alt=""
+          />
+          <p class="footer_principal_texto_instagram">Seguinos</p>
+        </footer>
+        <!-- Fin Footer -->
+  </body>
+</html>
