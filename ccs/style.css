@@ -7,191 +7,65 @@ html {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-
 /* FIN CARACTERISTICAS GENERALES */
 
 
-  .whatsapp {
-    position: fixed;
-    bottom: 40px;
-    right: 90px;
-    
+.whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 90px;
 }
 .navegacion_principal_header {
-  background-color: #3e6bc3;
-  /* width: 100%; */
-  /* height: 120px; */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
   position: fixed;
   display: grid;
   grid-template-areas: "logo nav";
-  /* padding: 40px 0 20px 0px; */
 }
 .navegacion_principal_header_logo {
   grid-area: logo;
   width: 10%;
-  padding-top: 2px;
   border-radius: 30%;
-}
-.navegacion_principal_nav {
-  /* width: 100%; */
-  grid-area: nav;
-  display: grid;
-  border-radius: 20%;
-  margin-top: 25px;
-  
+  padding: 5px;
 }
 
-.navegacion_a {
+.titulo_nav {
   text-align: center;
-  color: #043caa;
+  color: aqua;
   border-radius: 50px;
-  background-color: aqua;
-  font-weight: 500;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  padding: 20px;
-  margin: 10px;
+  padding: 40px;
+  margin: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 251, 255),
+    rgb(165, 164, 190)
+  );
 }
-.navegacion_sub {
-  color: #043caa;
-  border-radius: 50px;
-  background-color: aqua;
+.nav-item {
+  font-size: 20px;
   font-weight: bold;
-  font-size: small;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  width: 100%;
-  padding: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.navegacion_principal_nav ul {
-  font-size: 0;
-  text-align: end;
-}
-
-.navegacion_principal_nav ul li {
-  display: inline-block;
-  position: relative;
-}
-.navegacion_principal_nav ul ul {
-  display: none;
-  position: absolute;
-  padding-top: 25px;
-}
-
-.navegacion_principal_nav ul ul li {
-  display: block;
-  padding-bottom: 25px;
-  padding-top: 20px;
-  text-align: start;
-}
-
-.navegacion_principal_nav ul li:hover ul {
-  display: block;
-}
-
-.main_header_principal {
-  width: 95%;
-  height: 100%;
-}
-
-.main_header_principal_imagen {
-  width: 100%;
-  height: 200px;
-  margin: 0;
-  display: grid;
-}
-@media (min-width: 992px) {
-
-  .whatsapp {
-    bottom: 40px;
-    right: 40px;
-    
-}
-
-.navegacion_principal_header {
-  background-color: #3e6bc3;
-  width: 100%;
-  height: 120px;
-  position: fixed;
-  display: grid;
-  grid-template-areas: "logo nav";
-  padding: 40px 0 20px 0px;
-}
-.navegacion_principal_header_logo {
-  grid-area: logo;
-  width: 10%;
-  padding-top: 2px;
-  border-radius: 30%;
-}
-.navegacion_principal_nav {
-  width: 100%;
-  grid-area: nav;
-  display: grid;
-  border-radius: 20%;
-}
-
-.navegacion_a {
-  text-align: center;
-  color: #043caa;
-  border-radius: 50px;
-  background-color: aqua;
-  font-weight: 500;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  padding: 20px;
-  margin: 10px;
-}
-.navegacion_sub {
-  color: #043caa;
-  border-radius: 50px;
-  background-color: aqua;
-  font-weight: bold;
-  font-size: small;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  width: 100%;
-  padding: 15px;
-}
-.navegacion_principal_nav ul {
-  font-size: 0;
-  text-align: end;
-}
-
-.navegacion_principal_nav ul li {
-  display: inline-block;
-  position: relative;
-}
-.navegacion_principal_nav ul ul {
-  display: none;
-  position: absolute;
-  padding-top: 25px;
-}
-
-.navegacion_principal_nav ul ul li {
-  display: block;
-  padding-bottom: 25px;
-  padding-top: 20px;
-  text-align: start;
-}
-
-.navegacion_principal_nav ul li:hover ul {
-  display: block;
+.sub_titulo_nav {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 251, 255),
+    rgb(165, 164, 190)
+  ) !important;
 }
 /* FIN HEADER */
-
-
-
 .main_header_principal_imagen {
-  height: 500px;
-
+  height: 400px;
+  width: 100%;
 }
 /* FIN MAIN PRINCIPAL */
 
 /* INICIO CÓMO TRABAJAMOS */
 .como_trabajamos {
-  background-color: #3e6bc3;
   background-image: linear-gradient(
     to bottom,
     rgb(4, 0, 255),
@@ -218,16 +92,16 @@ html {
   color: aqua;
   font-weight: bold;
   line-height: 3;
-  background-color: #c33e92;
+  background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
   border-radius: 40%;
   text-align: center;
   width: 20%;
-  height: 50%;
+  height: 80%;
   padding: 25px;
+  margin-top: 25px;
   grid-area: title;
   font-size: 38px;
   align-items: center;
-  transition: height 2s;
 }
 .pedido_contenedor {
   /* text-align: start; */
@@ -240,19 +114,24 @@ html {
   justify-items: center;
 }
 .pedido_titulo {
-  color: #043caa;
+  color: aqua;
   font-weight: bold;
   border-radius: 30px;
-  background-color: aqua;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
   text-align: center;
   line-height: 3;
   grid-area: title_pedido;
   width: 50%;
   align-items: center;
-  height: 70px;
+  height: 90px;
+  font-size: 25px;
 }
 .pedido_imagen {
-  width: 50%;
+  width: 40%;
   border-radius: 40%;
   grid-area: imagen_pedido;
   margin: 15px;
@@ -283,21 +162,27 @@ html {
   justify-items: center;
 }
 .delivery_titulo {
-  color: #043caa;
+  color: aqua;
   font-weight: bold;
   border-radius: 30px;
-  background-color: aqua;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
   line-height: 3;
-  margin: 25px;
   text-align: center;
   grid-area: title_delivery;
+  width: 50%;
+  align-items: center;
   padding: 15px;
-  height: 60px;
+  height: 90px;
+  font-size: 25px;
 }
 .delivery_imagen {
   border-radius: 40%;
   margin: 25px;
-  width: 50%;
+  width: 40%;
   grid-area: imagen_delivery;
 }
 .delivery_contenido {
@@ -326,20 +211,27 @@ html {
   justify-items: center;
 }
 .takeaway_titulo {
-  color: #043caa;
+  color: aqua;
   font-weight: bold;
   border-radius: 30px;
-  background-color: aqua;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
   text-align: center;
   line-height: 3;
   grid-area: title_takeaway;
-  width: 50%;
+  /* width: 50%; */
+  height: 90px;
+  padding: 15px;
+  font-size: 25px;
 }
 .takeaway_imagen {
   border-radius: 40%;
   margin: 25px;
   grid-area: imagen_takeaway;
-  width: 50%;
+  width: 40%;
   justify-items: center;
 }
 
@@ -364,7 +256,7 @@ html {
   margin-top: 70px;
 }
 .pedilo_ahora {
-  background-color: #c33e92;
+  background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
   color: aqua;
   font-size: 40px;
   width: 250px;
@@ -375,23 +267,24 @@ html {
 }
 
 .pedilo_ahora:hover {
-  background-color: #c33e92;
+  background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
   color: aqua;
   font-size: 40px;
-  padding: 40px;
   margin: 30px;
   border-radius: 45px;
   font-weight: bold;
   transition: all 2s;
-  height: 60px;
-  width: 350px;
+  height: 180px;
+  width: 200px;
   padding: 20px;
+  align-self: center;
 }
 /* FIN CÓMO TRABAJAMOS */
 
 /* INICIO PROMOCIONES */
 .promociones_principal {
   width: 100%;
+  height: 20%;
   /* background-color: #3e6bc3; */
   background-image: linear-gradient(
     to bottom,
@@ -411,18 +304,22 @@ html {
   grid-template-areas: "promocion_01 promocion_02";
 }
 .promociones_titulo {
-  color: aqua;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
   font-weight: bold;
   line-height: 3;
   text-align: center;
-  background-color: rgb(0, 60, 255);
-  border-radius: 50%;
-  width: 2  0%;
-  height: 45%;
+  color: aqua;
+  border-radius: 80%;
+  width: 20%;
+  height: 65%;
   grid-area: tittle;
-  padding: 10px;
+  padding: 50px;
   margin: 50px;
-  font-size: 38px;
+  font-size: 35px;
   animation-name: promociones;
   animation-delay: 1s;
   animation-duration: 2s;
@@ -446,13 +343,17 @@ html {
 
 /* INICIO FOOTER */
 .footer_principal {
-  background-color: #3e6bc3;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
   color: white;
   font-size: medium;
   width: 100%;
   padding: 30px;
   display: grid;
-  height: 200px;
+  height: 300px;
   grid-template-areas: "farmacia instagram";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr;
@@ -471,6 +372,7 @@ html {
   width: 112px;
   height: 106px;
   margin: 20px;
+  border-radius: 40%;
   grid-area: logo_farmacia;
 }
 .footer_principal_texto_contacto {
@@ -494,6 +396,7 @@ html {
 .fOOter_principal_imagen_instagram {
   width: 112px;
   height: 106px;
+  border-radius: 40%;
   grid-area: logo_instagram;
 }
 .footer_principal_texto_instagram {
@@ -568,17 +471,42 @@ html {
     rgb(255, 0, 166),
     rgb(0, 200, 255)
   );
-  height: 600px;
-  
+  height: 800px;
 }
 .contactos_principal {
-  line-height: 100px;
+  line-height: 20px;
 }
 .contactos_descripcion {
   color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   padding: 17px;
+}
+.consultanos_contactos {
+  width: 250px;
+  text-align: center;
+  background-color: aqua;
+  border-radius: 20%;
+  font-size: 25px;
+  filter: drop-shadow(4px 7px 2px rgb(94, 93, 93));
+  animation-name: animacion_contactos;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin-top: 50px;
+}
+
+@keyframes animacion_contactos {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(50px);
+  }
+
+  40% {
+    transform: translateX(0);
+  }
 }
 
 .enviar {
@@ -613,26 +541,22 @@ html {
   100% {
     opacity: 1;
   }
-
 }
 
-@keyframes promociones{
+@keyframes promociones {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
-  
 }
-.input{
-font-size: 25px;
+.input {
+  font-size: 25px;
 }
 
-
-.localidad{
-font-size: 25px;
-
+.localidad {
+  font-size: 25px;
 }
 .checkbox {
   width: 25px;
@@ -646,44 +570,41 @@ font-size: 25px;
   font: 400;
   text-align: center;
   line-height: 6;
-  background-color: #5d8da0;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 200, 255),
+    rgb(0, 119, 255)
+  );
   display: grid;
   grid-template-areas: "card_cabello card_bucal card_personal";
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  padding-top: 120px;
+  height: 800px;
 }
 .cuidadopersonal_subtitulo {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 15px;
   color: aqua;
-  background-color: #c33e92;
   border-radius: 50%;
   font-weight: bold;
-  padding: 3;
-  width: 300px;
-  /* text-align: center; */
-  /* margin-right: 15px; */
   font-size: 35px;
+  filter: drop-shadow(4px 7px 2px rgb(94, 93, 93));
 }
-
 
 .seccion_cabello {
   height: 50%;
-  padding-top: 200px;
-  padding-bottom: 25px;
+  padding-top: 100px;
+  /* padding-bottom: 20px; */
   padding-left: 25px;
   width: 60%;
   grid-area: card_cabello;
   justify-self: center;
-  
 }
 .cabello_imagen {
   width: 300px;
   height: 250px;
   border-radius: 30px;
-  
 }
 .seccion_higiene_bucal {
   height: 50%;
@@ -700,10 +621,9 @@ font-size: 25px;
   border-radius: 30px;
 }
 
-
 .seccion_higiene_personal {
   height: 50%;
-  padding-top: 200px;
+  padding-top: 100px;
   padding-bottom: 25px;
   padding-left: 25px;
   width: 60%;
@@ -721,7 +641,7 @@ font-size: 25px;
 /* INICIO PAGINA MEDICAMENTOS */
 
 .medicamentos_principal {
-  width: 100%;
+  /* width: 100%; */
   background-image: linear-gradient(
     to right,
     rgb(255, 0, 166),
@@ -773,7 +693,7 @@ font-size: 25px;
   padding: 15px;
   border-radius: 40%;
   grid-area: titulo_particulares;
-  background-color:#c33e92;
+  background-color: #c33e92;
   text-align: center;
   margin: 25px;
 }
@@ -795,5 +715,3 @@ font-size: 25px;
   color: white;
   font-weight: bold;
 }
-
-/* FIN PAGINA MEDICAMENTOS */
