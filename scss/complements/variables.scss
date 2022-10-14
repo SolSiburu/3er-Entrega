@@ -1,0 +1,44 @@
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+$categories: (
+  "primary": (
+    color: $primary,
+    lightcolor: false,
+  ),
+  "secondary": (
+    color: $secondary,
+    lightcolor: false,
+  ),
+  "info": (
+    color: $info,
+    lightcolor: true,
+  ),
+  "cta": (
+    color: $cta,
+    lightcolor: true,
+  ),
+);
+
+@each $color, $color-claro in $categories {
+  .nosotros--#{$color} {
+    background-color: map-get($color-claro, color);
+    .nosotros_titulo,
+    .nosotros_contenido {
+      background-color: map-get($color-claro, color);
+      @if map-get($color-claro, lightcolor) == true {
+        color: $dark;
+      } @else {
+        color: $light;
+      }
+    }
+  }
+}

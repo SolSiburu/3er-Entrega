@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./ccs/style.css" />
+    <meta name="descripcion" content="farmacia de Rosario, respondemos tu consulta en el transcurso del día">
+    <meta name="keywords" content="paginas web, mobile frist, html5, css3, sass, responsive,ecommerce, apps a medida">
+    <link rel="stylesheet" href="./css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>Farmacia Mc Clymont</title>
+    <title>Farmacia Mc Clymont, contáctanos con tu pedido</title>
   </head>
   <body>
     <!-- !Inicio header + Navegador -->
@@ -19,34 +21,23 @@
       <nav class="navbar navbar-expand-lg " >
         <div class="container-fluid ">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active titulo_nav" aria-current="page" href="../index.html">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link titulo_nav" href="./nosotros.html">NOSOTROS</a>
+                <a class="nav-link active titulo_nav" href="./nosotros.html">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link titulo_nav" href="./contactos.html">CONTACTO</a>
+                <a class="nav-link active titulo_nav" href="./contactos.html">CONTACTO</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle titulo_nav" href="./cuidadopersonal.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item">
+                <a class="nav-link active titulo_nav" href="./cuidadopersonal.html">
                   CUIDADO PERSONAL
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item sub_titulo_nav" href="./cuidadopersonal.html">CABELLO</a></li>
-                  <li><a class="dropdown-item sub_titulo_nav" href="./cuidadopersonal.html">HIGIENE BUCAL</a></li>
-                  <li><a class="dropdown-item sub_titulo_nav" href="./cuidadopersonal.html">HIGIENE PERSONAL</a></li>
-                </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle titulo_nav " href="./medicamentos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  MEDICAMENTOS
-                </a>
-                <ul class="dropdown-menu menu_desplegable">
-                  <li><a class="dropdown-item sub_titulo_nav" href="./medicamentos.html">OBRA SOCIAL</a></li>
-                  <li><a class="dropdown-item sub_titulo_nav" href="./medicamentos.html">PARTICULAR</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link active titulo_nav " href="./medicamentos.html">MEDICAMENTOS</a>
               </li>
           </div>
         </div>
@@ -63,9 +54,10 @@
     </header>
     <!-- !Fin header + Navegador -->
     <!-- !Inicio contenido contactos -->
-    <section class="seccion_contactos">
-      <article>
+    <section class="seccion_contactos container-fluid">
+      <article class="row ">
         <form class="contactos_principal" action="">
+          <div class="contactos_datos">
           <label class="contactos_descripcion" for="name"
             >Nombre y Apellido</label
           >
@@ -81,7 +73,9 @@
           <label class="contactos_descripcion" for="password">Contraseña</label>
           <input class="input" type="password" name="password" placeholder="Contraseña" />
           <label class="contactos_descripcion" for="message">Mensaje</label>
-          <textarea name="" id="" cols="50" rows="5"></textarea>
+          <textarea name="" id="" cols="40" rows="4"></textarea>            
+          </div>
+          <div class="contactos_datos">
           <label class="contactos_descripcion" for="compra">Particular</label>
           <input class="input" type="radio" name="Particular" value="Particular" />
           <label class="contactos_descripcion" for="compra">Obra Social</label>
@@ -92,23 +86,24 @@
             <option class="localidad" value="rosario">Rosario</option>
             <option class="localidad" value="funes">Funes</option>
             <option class="localidad" value="pueblo esther">Pueblo Esther</option>
-          </select>
+          </select>            
+          </div>
+          <div class="contactos_accion col-md-8 ">
           <input class="enviar"type="reset" value="Limpiar Formulario" />
           <input  class="enviar"type="button" value="No hacer nada" />
           <label class="contactos_descripcion" for="acept"
             >Acepta términos y condiciones</label
           >
           <input class="checkbox" type="checkbox" name="acept" value="si" />
-          <input class="enviar_formulario" type="submit" value="Enviar Formulario" />
+          <input class="enviar_formulario" type="submit" value="Enviar Formulario" />            
+          </div>
         </form>
       </article>
-      <div>
-        <p class="consultanos_contactos">Consultános y en breve nos ponémos en contacto con vos</p>
-      </div>
     </section>
         <!-- Inicio Footer -->
-        <footer class="footer_principal_contactos">
-          <img
+        <footer class="footer_principal">
+          <div class="footer_farmacia">
+            <img
             class="footer_principal_imagen_logo"
             src="./img/LOGOMCCLYMONT.png"
             alt="LOGO MC CLYMONT"
@@ -116,12 +111,20 @@
           <p class="footer_principal_texto_contacto">
             Salta 2398 Rosario Santa Fe Tel.0341-4392110
           </p>
-          <img
-            class="fOOter_principal_imagen_instagram"
-            src="./img/LOGOMCCLYMONTINSTAG.png"
-            alt=""
+          </div>
+          <div class="footer_instagram">
+            <img
+            class="fOOter_principal_imagen_redes "
+            src="./img//instagram_108043.png"
+            alt="logo redes sociales"
           />
+          <img
+          class="fOOter_principal_imagen_redes"
+          src="./img/facebook_108044.png"
+          alt="logo redes sociales"
+        />
           <p class="footer_principal_texto_instagram">Seguinos</p>
+          </div>        
         </footer>
         <!-- Fin Footer -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

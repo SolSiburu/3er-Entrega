@@ -5,9 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./ccs/style.css" />
+    <meta name="descripcion" content="farmacia de Rosario, trabajamos con obra sociales y particulares con reintegros">
+    <meta name="keywords" content="paginas web, mobile frist, html5, css3, sass, responsive,ecommerce, apps a medida">
+    <link rel="stylesheet" href="./css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>Farmacia Mc Clymont</title>
+    <title>Farmacia Mc Clymont, enviános tu reseta sin moverte de tu casa</title>
   </head>
   <body>
     <header class="navegacion_principal_header container-fluid">
@@ -20,34 +22,23 @@
       <nav class="navbar navbar-expand-lg " >
         <div class="container-fluid ">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active titulo_nav" aria-current="page" href="../index.html">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link titulo_nav" href="./nosotros.html">NOSOTROS</a>
+                <a class="nav-link active titulo_nav" href="./nosotros.html">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link titulo_nav" href="./contactos.html">CONTACTO</a>
+                <a class="nav-link active titulo_nav" href="./contactos.html">CONTACTO</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle titulo_nav" href="./cuidadopersonal.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item">
+                <a class="nav-link active titulo_nav" href="./cuidadopersonal.html">
                   CUIDADO PERSONAL
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item sub_titulo_nav" href="./cuidadopersonal.html">CABELLO</a></li>
-                  <li><a class="dropdown-item sub_titulo_nav" href="./cuidadopersonal.html">HIGIENE BUCAL</a></li>
-                  <li><a class="dropdown-item sub_titulo_nav" href="./cuidadopersonal.html">HIGIENE PERSONAL</a></li>
-                </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle titulo_nav " href="./medicamentos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  MEDICAMENTOS
-                </a>
-                <ul class="dropdown-menu menu_desplegable">
-                  <li><a class="dropdown-item sub_titulo_nav" href="./medicamentos.html">OBRA SOCIAL</a></li>
-                  <li><a class="dropdown-item sub_titulo_nav" href="./medicamentos.html">PARTICULAR</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link active titulo_nav " href="./medicamentos.html">MEDICAMENTOS</a>
               </li>
           </div>
         </div>
@@ -63,16 +54,18 @@
       </div>
           <!-- Fin Navegador -->
   </header>
-  <main class="medicamentos_principal">>
-    <div class="obra_social">
-    <p class="medicamentos_titulo_os">Obra Social</p>
+  <main class="medicamentos_principal container-fluid">>
+    <div class="row">
+    <div class="obra_social col-md-6 jus">
+    <p class="medicamentos_titulo_os padding-3 col-md-6">Obra Social</p>
     <img class="medicamentos_obrasocial_imagen" src="./img/Ob.Social.webp" alt="Con Obra Social"> 
-    <p class="descripcion_medicamentos">Enviános la consulta de lo que necesitás y corroboramos la cobertura que tenés, de acuerdo a tu plan.</p>     
+    <p class="descripcion_medicamentos col-md-6">Enviános la consulta de lo que necesitás y corroboramos la cobertura que tenés, de acuerdo a tu plan.</p>     
     </div>
-    <div class="particulares">
-    <p class="medicamentos_titulo_particulares">Particular</p>
+    <div class="particulares col-md-6">
+    <p class="medicamentos_titulo_particulares padding-3  col-md-6">Particular</p>
     <img class="medicamentos_particular_imagen" src="./img/Particular.webp" alt="Sin Obra Social"> 
-    <p class="descripcion_medicamentos">En caso de no tener la reseta, se puede abonar y luego presentar bajo modalidad de reintegro.</p>      
+    <p class="descripcion_medicamentos col-md-6">En caso de no tener la reseta, se puede abonar y luego presentar bajo modalidad de reintegro.</p>      
+    </div>      
     </div>
   </main>
       <!-- Inicio Footer -->
@@ -89,12 +82,17 @@
         </div>
         <div class="footer_instagram">
           <img
-          class="fOOter_principal_imagen_instagram"
-          src="./img/LOGOMCCLYMONTINSTAG.png"
-          alt=""
+          class="fOOter_principal_imagen_redes "
+          src="./img//instagram_108043.png"
+          alt="logo redes sociales"
         />
+        <img
+        class="fOOter_principal_imagen_redes"
+        src="./img/facebook_108044.png"
+        alt="logo redes sociales"
+      />
         <p class="footer_principal_texto_instagram">Seguinos</p>
-        </div>
+        </div>        
       </footer>
       <!-- Fin Footer -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

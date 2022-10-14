@@ -1,0 +1,317 @@
+/* INICIO CARACTERISTICAS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* FIN CARACTERISTICAS GENERALES */
+
+.whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 90px;
+}
+.navegacion_principal_header {
+  background-color: blue;
+  position: fixed;
+  display: grid;
+  grid-template-areas: "logo nav";
+  // height: 120px;
+}
+.navegacion_principal_header_logo {
+  grid-area: logo;
+  width: 10%;
+  border-radius: 30%;
+  padding: 6px;
+}
+
+.titulo_nav {
+  text-align: center;
+  border-radius: 50px;
+  padding: 2 0px;
+  margin: 20px;
+  color: white;
+}
+.nav-item {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navbar_name{
+color: white;
+}
+
+/* FIN HEADER */
+.main_header_principal_imagen {
+  height: 400px;
+  width: 100%;
+}
+/* FIN MAIN PRINCIPAL */
+
+/* INICIO CÓMO TRABAJAMOS */
+
+.como_trabajamos {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(4, 0, 255),
+    rgb(0, 208, 255)
+  );
+}
+
+.como_trabajamos_contenedor {
+  gap: 20px 35px;
+}
+
+.como_trabajamos_titulo {
+  color: aqua;
+  font-weight: bold;
+  line-height: 3;
+  background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
+  border-radius: 40%;
+  margin-top: 25px;
+  font-size: 38px;
+}
+.pedido_contenedor {
+  margin-left: 15px;
+}
+
+.pedido_titulo {
+  color: aqua;
+  font-weight: bold;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
+  text-align: center;
+  line-height: 3;
+  align-items: center;
+  font-size: 25px;
+}
+.pedido_imagen {
+  border-radius: 40%;
+  margin: 15px;
+  transition: height 2s, width 1s;
+}
+.pedido_contenido {
+  color: aqua;
+  font-size: 20px;
+  background-color: #043caa;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.delivery_contenedor {
+  text-align: start;
+}
+.delivery_titulo {
+  color: aqua;
+  font-weight: bold;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
+  line-height: 3;
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+}
+.delivery_imagen {
+  border-radius: 40%;
+  margin: 15px;
+}
+.delivery_contenido {
+  color: aqua;
+  font-size: 20px;
+  background-color: #043caa;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 15px;
+  text-align: center;
+}
+
+.takeaway_contenedor {
+  margin-right: 15px;
+}
+.takeaway_titulo {
+  color: aqua;
+  font-weight: bold;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
+  text-align: center;
+  line-height: 3;
+  padding: 15px;
+  font-size: 25px;
+}
+.takeaway_imagen {
+  border-radius: 40%;
+  margin: 15px;
+}
+
+.takeaway_contenido {
+  color: aqua;
+  font-size: 20px;
+  background-color: #043caa;
+  font-weight: bold;
+  border-radius: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.pedilo_ahora_contenedor {
+  text-align: center;
+}
+.pedilo_ahora {
+  background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
+  color: aqua;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 45px;
+  font-weight: bold;
+  margin-right: 45px;
+}
+
+.pedilo_ahora:hover {
+  background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
+  color: aqua;
+  font-size: 40px;
+  border-radius: 45px;
+  font-weight: bold;
+  transition: all 2s;
+  padding: 40px;
+  margin-right: 20px;
+  align-self: center;
+}
+/* FIN CÓMO TRABAJAMOS */
+
+/* INICIO PROMOCIONES */
+.promociones_principal {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
+}
+
+.promociones_titulo {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
+  font-weight: bold;
+  line-height: 3;
+  text-align: center;
+  color: aqua;
+  border-radius: 80%;
+  padding: 50px;
+  margin: 50px;
+  font-size: 35px;
+  animation-name: promociones;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  transition: 5s;
+}
+
+/* FIN PROMOCIONES */
+
+/* INICIO FOOTER */
+
+.footer_principal {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 208, 255),
+    rgb(4, 0, 255)
+  );
+  color: white;
+  font-size: medium;
+  padding: 30px;
+  display: grid;
+  grid-template-areas:
+    "logo redes"
+    "texto1 texto2";
+  grid-template-columns: 1f 1fr;
+  grid-template-rows: 1fr;
+}
+.footer_farmacia {
+  display: grid;
+  grid-template-areas:
+    "logo"
+    "texto1";
+  grid-template-columns: 1f 1fr;
+  grid-template-rows: 1fr;
+  width: 100px;
+}
+.footer_principal_imagen_logo {
+  border-radius: 40%;
+  grid-template-columns: logo;
+  width: 5vw;
+
+  .footer_instagram {
+    display: grid;
+    grid-template-areas:
+      "redes1 redes2"
+      "texto2";
+    grid-template-columns: 1f 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.footer_principal_texto_contacto {
+  font-size: 20px;
+}
+
+.fOOter_principal_imagen_redes {
+  border-radius: 40%;
+  grid-area: redes1;
+  width: 5vw;
+}
+.fOOter_principal_imagen_redes {
+  border-radius: 40%;
+  grid-area: redes2;
+  width: 5vw;
+}
+.footer_principal_texto_instagram {
+  font-size: 20px;
+}
+
+@media (max-width: 376px) {
+
+  .navegacion_principal_header_logo {
+    width: 15%;
+
+  }
+  
+  .whatsapp {
+    width: 10px;
+  
+  }
+  .footer_principal_texto_instagram {
+    color: aqua;
+    font-weight: bold;
+    font-size: 10px;
+    grid-area: texto2;
+    text-align: start;
+    padding-top: 10px;
+  }
+  .footer_principal_texto_contacto {
+    color: aqua;
+    font-weight: bold;
+    font-size: 10px;
+    grid-area: texto1;
+    padding-top: 10px;
+  }
+}

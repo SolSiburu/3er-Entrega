@@ -1,0 +1,50 @@
+/* INICIO PAGINA NOSOTROS */
+.nosotros {
+  height: 100vh;
+  background-color: #c33e92;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 0, 166),
+    rgb(0, 200, 255)
+  );
+}
+.nosotros_titulo {
+  line-height: 3;
+  font-size: 45px;
+  color: aqua;
+  text-align: center;
+  padding-top: 250px;
+}
+.nosotros_contenido_p {
+  font: bold;
+  font-size: 28px;
+  color: #333333;
+  font-weight: bold;
+  line-height: 3;
+  margin: 50px 50px 0px 50px;
+  text-align: center;
+}
+/* FIN PAGINA NOSOTROS */
+@media (max-width: 376px) {
+  .nosotros {
+    height: 100vh;
+    background-color: #c33e92;
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 0, 166),
+      rgb(0, 200, 255)
+    );
+  }
+  .nosotros_titulo {
+    line-height: 3;
+    font-size: 30px;
+    color: aqua;
+    text-align: center;
+    padding-top: 90px;
+  }
+  .nosotros_contenido_p {
+    font-size: 15px;
+    line-height: 18px;
+    color: wheat;
+  }
+}

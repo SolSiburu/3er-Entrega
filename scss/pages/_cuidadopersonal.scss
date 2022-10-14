@@ -1,0 +1,91 @@
+/* INICIO PAGINA CUIDADO PERSONAL */
+
+.cuidadopersonal_principal {
+  font: 400;
+  text-align: center;
+  line-height: 6;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 200, 255),
+    rgb(94, 93, 93)
+  );
+  height: 110vh;
+}
+.card-body {
+  background-color: burlywood;
+}
+.card-title {
+  color: blue;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 35px;
+}
+.card-text {
+  font-size: 25px;
+  line-height: 30px;
+}
+.seccion_cabello {
+  padding-top: 300px;
+}
+.seccion_bebes {
+  padding-top: 300px;
+}
+.seccion_higiene_bucal {
+  padding-top: 20px;
+}
+.seccion_higiene_personal {
+  padding-top: 300px;
+}
+.seccion_mamas {
+  padding-top: 20px;
+}
+.seccion_alimentos_saludables {
+  padding-top: 20px;
+}
+/* FINAL PAGINA CUIDADO PERSONAL */
+@media (max-width: 376px) {
+  .whatsapp {
+    position: fixed;
+    bottom: 30px;
+  }
+  .cuidadopersonal_principal {
+    font: 400;
+    text-align: center;
+    line-height: 6;
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 200, 255),
+      rgb(94, 93, 93)
+    );
+    height: 475vh;
+  }
+
+  .card {
+    width: 70vw;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 15px;
+    line-height: 13px;
+  }
+  .seccion_cabello {
+    padding-top: 150px;
+  }
+  .seccion_bebes {
+    padding-top: 50px;
+  }
+  .seccion_higiene_bucal {
+    padding-top: 50px;
+  }
+  .seccion_higiene_personal {
+    padding-top: 50px;
+  }
+  .seccion_mamas {
+    padding-top: 50px;
+  }
+  .seccion_alimentos_saludables {
+    padding-top: 50px;
+  }
+}
