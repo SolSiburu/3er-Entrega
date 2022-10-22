@@ -8700,7 +8700,7 @@ html {
   text-align: center;
   line-height: 6;
   background-image: linear-gradient(to right, #00c8ff, #5e5d5d);
-  height: 110vh; }
+  height: 130vh; }
 
 .card-body {
   background-color: burlywood; }
@@ -8828,7 +8828,7 @@ html {
 
 /* INICIO PAGINA NOSOTROS */
 .nosotros {
-  height: 100vh;
+  height: 130vh;
   background-color: #c33e92;
   background-image: linear-gradient(to right, #ff00a6, #00c8ff); }
 
