@@ -1,4 +1,7 @@
 /* INICIO PAGINA NOSOTROS */
+
+
+
 .nosotros {
   height: 100vh;
   background-color: #c33e92;
@@ -25,7 +28,8 @@
   text-align: center;
 }
 /* FIN PAGINA NOSOTROS */
-@media (max-width: 376px) {
+@media only screen and (max-width: 376px) {
+
   .nosotros {
     height: 100vh;
     background-color: #c33e92;
@@ -46,5 +50,9 @@
     font-size: 15px;
     line-height: 18px;
     color: wheat;
+  }
+  .titulo_nav {
+    font-size: 10px;
+
   }
 }

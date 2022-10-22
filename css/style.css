@@ -8399,13 +8399,14 @@ html {
 .whatsapp {
   position: fixed;
   bottom: 40px;
-  right: 90px; }
+  right: 15px; }
 
 .navegacion_principal_header {
   background-color: blue;
   position: fixed;
   display: grid;
-  grid-template-areas: "logo nav"; }
+  grid-template-areas: "logo nav";
+  z-index: 99; }
 
 .navegacion_principal_header_logo {
   grid-area: logo;
@@ -8416,14 +8417,11 @@ html {
 .titulo_nav {
   text-align: center;
   border-radius: 50px;
-  padding: 2 0px;
+  padding: 18px;
   margin: 20px;
-  color: white; }
-
-.nav-item {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+  color: 0 !important;
+  background-color: aqua;
+  font-size: 25px; }
 
 .navbar_name {
   color: white; }
@@ -8438,20 +8436,13 @@ html {
 .como_trabajamos {
   background-image: linear-gradient(to bottom, #0400ff, #00d0ff); }
 
-.como_trabajamos_contenedor {
-  gap: 20px 35px; }
-
 .como_trabajamos_titulo {
   color: aqua;
   font-weight: bold;
   line-height: 3;
   background-image: linear-gradient(to bottom, #c33e92, #0400ff);
   border-radius: 40%;
-  margin-top: 25px;
-  font-size: 38px; }
-
-.pedido_contenedor {
-  margin-left: 15px; }
+  font-size: 43px; }
 
 .pedido_titulo {
   color: aqua;
@@ -8461,16 +8452,15 @@ html {
   text-align: center;
   line-height: 3;
   align-items: center;
-  font-size: 25px; }
+  font-size: 35px; }
 
 .pedido_imagen {
   border-radius: 40%;
-  margin: 15px;
   transition: height 2s, width 1s; }
 
 .pedido_contenido {
   color: aqua;
-  font-size: 20px;
+  font-size: 30px;
   background-color: #043caa;
   font-weight: bold;
   padding: 15px;
@@ -8487,7 +8477,7 @@ html {
   background-image: linear-gradient(to bottom, #00d0ff, #0400ff);
   line-height: 3;
   padding: 15px;
-  font-size: 25px;
+  font-size: 35px;
   text-align: center; }
 
 .delivery_imagen {
@@ -8496,15 +8486,12 @@ html {
 
 .delivery_contenido {
   color: aqua;
-  font-size: 20px;
+  font-size: 30px;
   background-color: #043caa;
   font-weight: bold;
   border-radius: 40px;
   padding: 15px;
   text-align: center; }
-
-.takeaway_contenedor {
-  margin-right: 15px; }
 
 .takeaway_titulo {
   color: aqua;
@@ -8514,15 +8501,14 @@ html {
   text-align: center;
   line-height: 3;
   padding: 15px;
-  font-size: 25px; }
+  font-size: 35px; }
 
 .takeaway_imagen {
-  border-radius: 40%;
-  margin: 15px; }
+  border-radius: 40%; }
 
 .takeaway_contenido {
   color: aqua;
-  font-size: 20px;
+  font-size: 30px;
   background-color: #043caa;
   font-weight: bold;
   border-radius: 40px;
@@ -8563,16 +8549,10 @@ html {
   line-height: 3;
   text-align: center;
   color: aqua;
-  border-radius: 80%;
+  border-radius: 10%;
   padding: 50px;
   margin: 50px;
-  font-size: 35px;
-  animation-name: promociones;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  opacity: 0;
-  transition: 5s; }
+  font-size: 35px; }
 
 /* FIN PROMOCIONES */
 /* INICIO FOOTER */
@@ -8619,11 +8599,27 @@ html {
 .footer_principal_texto_instagram {
   font-size: 20px; }
 
-@media (max-width: 376px) {
+@media only screen and (max-width: 376px) {
   .navegacion_principal_header_logo {
     width: 15%; }
-  .whatsapp {
-    width: 10px; }
+  .navegacion_principal_header {
+    background-color: blue;
+    position: fixed;
+    display: grid;
+    grid-template-areas: "logo nav";
+    z-index: 99; }
+  .navegacion_principal_header_logo {
+    grid-area: logo;
+    border-radius: 30%;
+    padding: 6px; }
+  .titulo_nav {
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px;
+    margin: 5px;
+    color: white;
+    font-size: 15px;
+    width: 50%; }
   .footer_principal_texto_instagram {
     color: aqua;
     font-weight: bold;
@@ -8636,93 +8632,66 @@ html {
     font-weight: bold;
     font-size: 10px;
     grid-area: texto1;
-    padding-top: 10px; } }
+    padding-top: 10px; }
+  .main_header_principal_imagen {
+    height: 175px; }
+  .como_trabajamos_titulo {
+    font-size: 25px; }
+  .pedido_titulo {
+    font-size: 18px; }
+  .pedido_imagen {
+    width: 250px; }
+  .pedido_contenido {
+    font-size: 15px; }
+  .delivery_contenedor {
+    text-align: start; }
+  .delivery_titulo {
+    font-size: 18px; }
+  .delivery_imagen {
+    width: 250px; }
+  .delivery_contenido {
+    font-size: 15px; }
+  .takeaway_contenedor {
+    margin-right: 15px; }
+  .takeaway_titulo {
+    font-size: 18px; }
+  .takeaway_imagen {
+    width: 250px; }
+  .takeaway_contenido {
+    font-size: 15px; }
+  .pedilo_ahora_contenedor {
+    text-align: center; }
+  .pedilo_ahora {
+    font-size: 28px; }
+  .promociones_titulo {
+    font-size: 20px;
+    padding: 30px;
+    margin: 20px;
+    width: 50%; } }
 
 /* INICIO PAGINA CONTACTOS */
 .seccion_contactos {
   padding-top: 300px;
   font: 25px;
   background-image: linear-gradient(to right, #ff00a6, #00c8ff);
-  height: 1000px; }
+  height: 1200px; }
 
-.contactos_principal {
-  line-height: 20px; }
+.form-label {
+  font-size: 30px; }
 
-.contactos_datos {
-  margin: 25px;
-  padding: 17px; }
+.form-control {
+  font-size: 20px; }
 
-.contactos_descripcion {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 17px; }
-
-.consultanos_contactos {
-  text-align: center;
-  background-color: aqua;
-  border-radius: 20%;
-  font-size: 25px;
-  filter: drop-shadow(4px 7px 2px #5e5d5d);
-  width: 30%;
-  margin-top: 200px;
-  margin-left: 50px; }
-
-.contactos_accion {
-  margin-left: 50px; }
-
-@keyframes animacion_contactos {
-  0% {
-    transform: translateX(0); }
-  20% {
-    transform: translateX(50px); }
-  40% {
-    transform: translateX(0); } }
-
-.enviar {
-  font-size: 20px;
-  margin-top: 15px;
-  padding: 20px;
-  color: white;
-  border-radius: 50%;
-  font-weight: bold;
-  background-color: #c33e92; }
-
-.enviar_formulario {
-  font-size: 25px;
-  margin-top: 15px;
-  margin-left: 25px;
-  padding: 25px;
-  color: white;
-  border-radius: 50%;
-  font-weight: bold;
-  background-color: #c33e92;
-  height: 100px;
-  animation-duration: 3s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite; }
-
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes promociones {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-.input {
-  font-size: 25px; }
-
-.localidad {
-  font-size: 25px; }
-
-.checkbox {
-  width: 25px;
-  height: 25px; }
+@media only screen and (max-width: 376px) {
+  .seccion_contactos {
+    padding-top: 120px;
+    font: 25px;
+    background-image: linear-gradient(to right, #ff00a6, #00c8ff);
+    height: 700px; }
+  .form-label {
+    font-size: 15px; }
+  .form-control {
+    font-size: 2px; } }
 
 /* FIN PAGINA CONTACTOS */
 /* INICIO PAGINA CUIDADO PERSONAL */
@@ -8765,16 +8734,41 @@ html {
   padding-top: 20px; }
 
 /* FINAL PAGINA CUIDADO PERSONAL */
-@media (max-width: 376px) {
+@media only screen and (max-width: 376px) {
   .whatsapp {
     position: fixed;
-    bottom: 30px; }
+    bottom: 30px;
+    width: 50px;
+    height: 50px; }
+  .navegacion_principal_header {
+    background-color: blue;
+    position: fixed;
+    display: grid;
+    grid-template-areas: "logo nav";
+    z-index: 99; }
+  .navegacion_principal_header_logo {
+    grid-area: logo;
+    width: 10%;
+    border-radius: 30%;
+    padding: 6px; }
+  .titulo_nav {
+    text-align: center;
+    border-radius: 50px;
+    padding: 2 0px;
+    margin: 20px;
+    color: white; }
+  .nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+  .navbar_name {
+    color: white; }
   .cuidadopersonal_principal {
     font: 400;
     text-align: center;
     line-height: 6;
     background-image: linear-gradient(to right, #00c8ff, #5e5d5d);
-    height: 475vh; }
+    height: 415vh; }
   .card {
     width: 70vw; }
   .card-title {
@@ -8797,46 +8791,40 @@ html {
 
 /* INICIO PAGINA MEDICAMENTOS */
 .medicamentos_principal {
-  /* width: 100%; */
   background-image: linear-gradient(to right, #ff00a6, #00c8ff);
   padding-bottom: 25px; }
 
-.medicamentos_titulo_os {
+.medicamentos_titulo {
   font-size: 30px;
-  color: white;
+  color: blue;
   font-weight: bold;
-  padding: 15px;
+  padding: 18px;
   border-radius: 40%;
   background-color: aqua;
   text-align: center;
-  margin-top: 100px; }
+  margin-top: 200px; }
 
-.medicamentos_titulo_particulares {
-  font-size: 30px;
-  color: white;
-  font-weight: bold;
-  padding: 25px;
-  background-color: #c33e92;
-  text-align: center;
-  margin-top: 100px;
-  border-radius: 60%; }
-
-.medicamentos_obrasocial_imagen {
+.imagen_medicamentos {
   width: 500px;
   border-radius: 30%;
-  margin-top: 300px; }
-
-.medicamentos_particular_imagen {
-  width: 500px;
-  border-radius: 30%;
-  margin-top: 300px; }
+  margin-top: 150px; }
 
 .descripcion_medicamentos {
   font-size: 30px;
-  color: white;
-  font-weight: bold;
-  filter: drop-shadow(4px 7px 2px #5e5d5d);
-  text-align: center; }
+  color: aqua;
+  font-weight: bold; }
+
+@media only screen and (max-width: 376px) {
+  .medicamentos_titulo {
+    font-size: 20px;
+    width: 50%;
+    margin-top: 75px; }
+  .imagen_medicamentos {
+    width: 500px;
+    border-radius: 30%;
+    margin-top: 15px; }
+  .descripcion_medicamentos {
+    font-size: 15px; } }
 
 /* INICIO PAGINA NOSOTROS */
 .nosotros {
@@ -8861,7 +8849,7 @@ html {
   text-align: center; }
 
 /* FIN PAGINA NOSOTROS */
-@media (max-width: 376px) {
+@media only screen and (max-width: 376px) {
   .nosotros {
     height: 100vh;
     background-color: #c33e92;
@@ -8875,7 +8863,9 @@ html {
   .nosotros_contenido_p {
     font-size: 15px;
     line-height: 18px;
-    color: wheat; } }
+    color: wheat; }
+  .titulo_nav {
+    font-size: 10px; } }
 
 .padding-1 {
   padding: 1rem; }

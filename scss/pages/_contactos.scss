@@ -8,102 +8,38 @@
       rgb(255, 0, 166),
       rgb(0, 200, 255)
     );
-    height: 1000px;
-  }
-  .contactos_principal {
-    line-height: 20px;
-  }
-  .contactos_datos {
-    margin: 25px;
-    padding: 17px;
-  }
-  .contactos_descripcion {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 17px;
-  }
-  .consultanos_contactos {
-    text-align: center;
-    background-color: aqua;
-    border-radius: 20%;
-    font-size: 25px;
-    filter: drop-shadow(4px 7px 2px rgb(94, 93, 93));
-    width: 30%;
-    margin-top: 200px;
-    margin-left: 50px;
+    height: 1200px;
   }
 
-  .contactos_accion {
-    margin-left: 50px;
+  .form-label{
+    font-size: 30px;
+
   }
-  
-  @keyframes animacion_contactos {
-    0% {
-      transform: translateX(0);
-    }
-  
-    20% {
-      transform: translateX(50px);
-    }
-  
-    40% {
-      transform: translateX(0);
-    }
-  }
-  
-  .enviar {
+  .form-control{
     font-size: 20px;
-    margin-top: 15px;
-    padding: 20px;
-    color: white;
-    border-radius: 50%;
-    font-weight: bold;
-    background-color: #c33e92;
+
+  }
+  @media only screen and (max-width: 376px) {
+
+  .seccion_contactos {
+    padding-top: 120px;
+    font: 25px;
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 0, 166),
+      rgb(0, 200, 255)
+    );
+    height: 700px;
+  }
+  .form-label{
+    font-size: 15px;
+
+  }
+  .form-control{
+    font-size: 2px;
+
   }
   
-  .enviar_formulario {
-    font-size: 25px;
-    margin-top: 15px;
-    margin-left: 25px;
-    padding: 25px;
-    color: white;
-    border-radius: 50%;
-    font-weight: bold;
-    background-color: #c33e92;
-    height: 100px;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes promociones {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  .input {
-    font-size: 25px;
-  }
-  
-  .localidad {
-    font-size: 25px;
-  }
-  .checkbox {
-    width: 25px;
-    height: 25px;
   }
   /* FIN PAGINA CONTACTOS */
   

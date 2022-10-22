@@ -12,14 +12,14 @@ html {
 .whatsapp {
   position: fixed;
   bottom: 40px;
-  right: 90px;
+  right: 15px;
 }
 .navegacion_principal_header {
   background-color: blue;
   position: fixed;
   display: grid;
   grid-template-areas: "logo nav";
-  // height: 120px;
+  z-index: 99;
 }
 .navegacion_principal_header_logo {
   grid-area: logo;
@@ -31,18 +31,15 @@ html {
 .titulo_nav {
   text-align: center;
   border-radius: 50px;
-  padding: 2 0px;
+  padding: 18px;
   margin: 20px;
+  color: blue($color: #000000) !important;
+  background-color: aqua;
+  font-size: 25px;
+}
+
+.navbar_name {
   color: white;
-}
-.nav-item {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.navbar_name{
-color: white;
 }
 
 /* FIN HEADER */
@@ -62,21 +59,13 @@ color: white;
   );
 }
 
-.como_trabajamos_contenedor {
-  gap: 20px 35px;
-}
-
 .como_trabajamos_titulo {
   color: aqua;
   font-weight: bold;
   line-height: 3;
   background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
   border-radius: 40%;
-  margin-top: 25px;
-  font-size: 38px;
-}
-.pedido_contenedor {
-  margin-left: 15px;
+  font-size: 43px;
 }
 
 .pedido_titulo {
@@ -91,16 +80,15 @@ color: white;
   text-align: center;
   line-height: 3;
   align-items: center;
-  font-size: 25px;
+  font-size: 35px;
 }
 .pedido_imagen {
   border-radius: 40%;
-  margin: 15px;
   transition: height 2s, width 1s;
 }
 .pedido_contenido {
   color: aqua;
-  font-size: 20px;
+  font-size: 30px;
   background-color: #043caa;
   font-weight: bold;
   padding: 15px;
@@ -122,7 +110,7 @@ color: white;
   );
   line-height: 3;
   padding: 15px;
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
 }
 .delivery_imagen {
@@ -131,7 +119,7 @@ color: white;
 }
 .delivery_contenido {
   color: aqua;
-  font-size: 20px;
+  font-size: 30px;
   background-color: #043caa;
   font-weight: bold;
   border-radius: 40px;
@@ -139,9 +127,6 @@ color: white;
   text-align: center;
 }
 
-.takeaway_contenedor {
-  margin-right: 15px;
-}
 .takeaway_titulo {
   color: aqua;
   font-weight: bold;
@@ -154,16 +139,15 @@ color: white;
   text-align: center;
   line-height: 3;
   padding: 15px;
-  font-size: 25px;
+  font-size: 35px;
 }
 .takeaway_imagen {
   border-radius: 40%;
-  margin: 15px;
 }
 
 .takeaway_contenido {
   color: aqua;
-  font-size: 20px;
+  font-size: 30px;
   background-color: #043caa;
   font-weight: bold;
   border-radius: 40px;
@@ -215,16 +199,10 @@ color: white;
   line-height: 3;
   text-align: center;
   color: aqua;
-  border-radius: 80%;
+  border-radius: 10%;
   padding: 50px;
   margin: 50px;
   font-size: 35px;
-  animation-name: promociones;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  opacity: 0;
-  transition: 5s;
 }
 
 /* FIN PROMOCIONES */
@@ -288,17 +266,35 @@ color: white;
   font-size: 20px;
 }
 
-@media (max-width: 376px) {
-
+@media only screen and (max-width: 376px) {
   .navegacion_principal_header_logo {
     width: 15%;
+  }
 
+  .navegacion_principal_header {
+    background-color: blue;
+    position: fixed;
+    display: grid;
+    grid-template-areas: "logo nav";
+    z-index: 99;
   }
-  
-  .whatsapp {
-    width: 10px;
-  
+
+  .navegacion_principal_header_logo {
+    grid-area: logo;
+    border-radius: 30%;
+    padding: 6px;
   }
+
+  .titulo_nav {
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px;
+    margin: 5px;
+    color: white;
+    font-size: 15px;
+    width: 50%;
+  }
+
   .footer_principal_texto_instagram {
     color: aqua;
     font-weight: bold;
@@ -313,5 +309,61 @@ color: white;
     font-size: 10px;
     grid-area: texto1;
     padding-top: 10px;
+  }
+  .main_header_principal_imagen {
+    height: 175px;
+  }
+
+  .como_trabajamos_titulo {
+    font-size: 25px;
+  }
+
+  .pedido_titulo {
+    font-size: 18px;
+  }
+  .pedido_imagen {
+    width: 250px;
+  }
+  .pedido_contenido {
+    font-size: 15px;
+  }
+
+  .delivery_contenedor {
+    text-align: start;
+  }
+  .delivery_titulo {
+    font-size: 18px;
+  }
+  .delivery_imagen {
+    width: 250px;
+  }
+  .delivery_contenido {
+    font-size: 15px;
+  }
+
+  .takeaway_contenedor {
+    margin-right: 15px;
+  }
+  .takeaway_titulo {
+    font-size: 18px;
+  }
+  .takeaway_imagen {
+    width: 250px;
+  }
+
+  .takeaway_contenido {
+    font-size: 15px;
+  }
+  .pedilo_ahora_contenedor {
+    text-align: center;
+  }
+  .pedilo_ahora {
+    font-size: 28px;
+  }
+  .promociones_titulo {
+    font-size: 20px;
+    padding: 30px;
+    margin: 20px;
+    width: 50%;
   }
 }

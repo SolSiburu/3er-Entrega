@@ -12,14 +12,18 @@
   </head>
   <body>
     <!-- !Inicio header + Navegador -->
-    <header class="navegacion_principal_header container-fluid">
-      <img
-        class="navegacion_principal_header_logo row"
-        src="./img/LOGOMCCLYMONT.png"
-        alt="LOGO MC CLYMONT"
-      />
-      <nav class="navbar navbar-expand-lg " >
+    <header class="navegacion_principal_header container-fluid">  
+      <nav class="navbar navbar-expand-lg" >
         <div class="container-fluid ">
+          <img
+        class="navegacion_principal_header_logo  "
+        src="./img/LOGOMCCLYMONT.png"
+        alt="LOGO MC CLYMONT"   
+      />        
+      </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -42,8 +46,8 @@
           </div>
         </div>
       </nav>
-      <div class="whatsapp">
-        <img
+      <div >
+        <img class="whatsapp"
           src="./img/WhatsApp.svg.webp"
           alt="Whatsapp"
           width="100"
@@ -56,47 +60,39 @@
     <!-- !Inicio contenido contactos -->
     <section class="seccion_contactos container-fluid">
       <article class="row ">
-        <form class="contactos_principal" action="">
-          <div class="contactos_datos">
-          <label class="contactos_descripcion" for="name"
-            >Nombre y Apellido</label
-          >
-          <input class="input"
-            type="text"
-            name="name"
-            placeholder="Nombre y Apellido completo"
-          />
-          <label class="contactos_descripcion" for="email"
-            >Correo Electrónico</label
-          >
-          <input class="input" type="email" name="email" placeholder="Email" />
-          <label class="contactos_descripcion" for="password">Contraseña</label>
-          <input class="input" type="password" name="password" placeholder="Contraseña" />
-          <label class="contactos_descripcion" for="message">Mensaje</label>
-          <textarea name="" id="" cols="40" rows="4"></textarea>            
-          </div>
-          <div class="contactos_datos">
-          <label class="contactos_descripcion" for="compra">Particular</label>
-          <input class="input" type="radio" name="Particular" value="Particular" />
-          <label class="contactos_descripcion" for="compra">Obra Social</label>
-          <input class="input" type="radio" name="compra" value="Con Obra Social" />
-          <label class="contactos_descripcion" for="location">Localidad</label>
-          <select name="location" id="">
-            <option class="localidad" value=""></option>
-            <option class="localidad" value="rosario">Rosario</option>
-            <option class="localidad" value="funes">Funes</option>
-            <option class="localidad" value="pueblo esther">Pueblo Esther</option>
-          </select>            
-          </div>
-          <div class="contactos_accion col-md-8 ">
-          <input class="enviar"type="reset" value="Limpiar Formulario" />
-          <input  class="enviar"type="button" value="No hacer nada" />
-          <label class="contactos_descripcion" for="acept"
-            >Acepta términos y condiciones</label
-          >
-          <input class="checkbox" type="checkbox" name="acept" value="si" />
-          <input class="enviar_formulario" type="submit" value="Enviar Formulario" />            
-          </div>
+        <div class="mb-3 col-md-6">
+          <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+          <input type="" class="form-control" id="completar" placeholder="Nombre y Apellido Completo">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="completar" placeholder="name@example.com">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Debe contener al menos 8 carateres">
+        </div>
+        <select class= "col-md-3" name="Modalidad de Compra" id="">
+          <option class="modalidad_compra " value="Modalidad de Compra">Modalidad de Compra</option>
+          <option class="modalidad_compra" value="obra social">Obra Social</option>
+          <option class="modalidad_compra" value="particular">Particular</option>
+          <option class="modalidad_compra" value="reintegros">Reintegros</option>
+        </select>   
+        <select class= "col-md-3" name="location" id="">
+          <option class="localidad" value="Localidad">Localidad</option>
+          <option class="localidad" value="rosario">Rosario</option>
+          <option class="localidad" value="funes">Funes</option>
+          <option class="localidad" value="pueblo esther">Pueblo Esther</option>
+        </select>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Acepta Términos y Condicionest</label>
+        </div>
+        <button type="submit" class="btn btn-primary col-md-3">Enviar</button>
         </form>
       </article>
     </section>

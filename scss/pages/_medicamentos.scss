@@ -1,51 +1,62 @@
   /* INICIO PAGINA MEDICAMENTOS */
   
   .medicamentos_principal {
-    /* width: 100%; */
     background-image: linear-gradient(
       to right,
       rgb(255, 0, 166),
       rgb(0, 200, 255)
     );
     padding-bottom: 25px;
+
   }
   
-  .medicamentos_titulo_os {
+  .medicamentos_titulo {
     font-size: 30px;
-    color: white;
+    color: blue;
     font-weight: bold;
-    padding: 15px;
+    padding: 18px;
     border-radius: 40%;
     background-color: aqua;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
   }
-  .medicamentos_titulo_particulares {
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-    padding: 25px;
-    background-color: #c33e92;
-    text-align: center;
-    margin-top: 100px;
-    border-radius: 60%;
-  }
-  
-  .medicamentos_obrasocial_imagen {
+
+  .imagen_medicamentos{
     width: 500px;
     border-radius: 30%;
-    margin-top: 300px;
+    margin-top: 150px;
   }
-  .medicamentos_particular_imagen {
-    width: 500px;
-    border-radius: 30%;
-    margin-top: 300px;
-  }
+
+
+
   .descripcion_medicamentos {
     font-size: 30px;
-    color: white;
+    color: aqua;
     font-weight: bold;
-    filter: drop-shadow(4px 7px 2px rgb(94, 93, 93));
-    text-align: center;
+    
+    
+  }
+
+  @media only screen and (max-width: 376px) {
+      
+  
+  .medicamentos_titulo {
+    font-size: 20px;
+    width: 50%;
+    margin-top: 75px;
+    }
+
+  
+  .imagen_medicamentos{
+    width: 500px;
+    border-radius: 30%;
+    margin-top: 15px;
+  }
+
+
+  .descripcion_medicamentos {
+    font-size: 15px;
+
   }
   
+  }

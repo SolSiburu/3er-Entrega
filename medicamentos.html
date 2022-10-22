@@ -12,15 +12,18 @@
     <title>Farmacia Mc Clymont, enviános tu reseta sin moverte de tu casa</title>
   </head>
   <body>
-    <header class="navegacion_principal_header container-fluid">
-      <img
-        class="navegacion_principal_header_logo row "
-        src="./img/LOGOMCCLYMONT.png"
-        alt="LOGO MC CLYMONT"
-      />
-      <!-- Inicio Navegador -->
-      <nav class="navbar navbar-expand-lg " >
+    <header class="navegacion_principal_header container-fluid">  
+      <nav class="navbar navbar-expand-lg" >
         <div class="container-fluid ">
+          <img
+        class="navegacion_principal_header_logo  "
+        src="./img/LOGOMCCLYMONT.png"
+        alt="LOGO MC CLYMONT"   
+      />        
+      </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -43,8 +46,8 @@
           </div>
         </div>
       </nav>
-      <div class="whatsapp">
-        <img
+      <div >
+        <img class="whatsapp"
           src="./img/WhatsApp.svg.webp"
           alt="Whatsapp"
           width="100"
@@ -56,16 +59,21 @@
   </header>
   <main class="medicamentos_principal container-fluid">>
     <div class="row">
-    <div class="obra_social col-md-6 jus">
-    <p class="medicamentos_titulo_os padding-3 col-md-6">Obra Social</p>
-    <img class="medicamentos_obrasocial_imagen" src="./img/Ob.Social.webp" alt="Con Obra Social"> 
+    <div class="obra_social col-md-4">
+    <p class="medicamentos_titulo  col-md-4">Obra Social</p>
+    <img src="./img/Ob.Social.webp" class="img-fluid img-thumbnail imagen_medicamentos" alt="Obra Social">
     <p class="descripcion_medicamentos col-md-6">Enviános la consulta de lo que necesitás y corroboramos la cobertura que tenés, de acuerdo a tu plan.</p>     
     </div>
-    <div class="particulares col-md-6">
-    <p class="medicamentos_titulo_particulares padding-3  col-md-6">Particular</p>
-    <img class="medicamentos_particular_imagen" src="./img/Particular.webp" alt="Sin Obra Social"> 
-    <p class="descripcion_medicamentos col-md-6">En caso de no tener la reseta, se puede abonar y luego presentar bajo modalidad de reintegro.</p>      
-    </div>      
+    <div class="particulares col-md-4">
+    <p class="medicamentos_titulo  col-md-4">Particular</p>
+    <img class="img-fluid img-thumbnail imagen_medicamentos" src="./img//Particular.webp" alt="Sin Obra Social"> 
+    <p class="descripcion_medicamentos col-md-6">En caso de no contar con obra social, atribuimos descuentos especiales, para poder ayudarte a contar con la medicación necesaaria.</p>      
+    </div>  
+    <div class="reintegros col-md-4">
+      <p class="medicamentos_titulo col-md-4">Reintegros</p>
+      <img class="img-fluid img-thumbnail imagen_medicamentos" src="./img/istockphoto-508141100-1024x1024.jpg" alt="Reintegros"> 
+      <p class="descripcion_medicamentos col-md-6">En caso de no tener la reseta, se puede abonar y luego presentar bajo modalidad de reintegro.</p>      
+      </div>
     </div>
   </main>
       <!-- Inicio Footer -->
