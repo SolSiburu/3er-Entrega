@@ -9,21 +9,19 @@ html {
 
 /* FIN CARACTERISTICAS GENERALES */
 
+/* INICIO CÓMO TRABAJAMOS */
 .whatsapp {
   position: fixed;
   bottom: 40px;
-  right: 15px;
+  right: 65px;
 }
 .navegacion_principal_header {
-  background-color: blue;
-  position: fixed;
-  display: grid;
-  grid-template-areas: "logo nav";
-  z-index: 99;
+  background-color: rgb(0, 81, 255);
+
+  
 }
 .navegacion_principal_header_logo {
-  grid-area: logo;
-  width: 10%;
+  width: 160px;
   border-radius: 30%;
   padding: 6px;
 }
@@ -31,45 +29,30 @@ html {
 .titulo_nav {
   text-align: center;
   border-radius: 50px;
-  padding: 18px;
-  margin: 20px;
-  color: blue($color: #000000) !important;
-  background-color: aqua;
-  font-size: 25px;
+  margin: 30px;
+  color: white !important;
+  font-weight: bold;
+  font-size: 10px !important;
 }
 
-.navbar_name {
-  color: white;
+.carousel-item {
+  height: 700px;
 }
-
-/* FIN HEADER */
-.main_header_principal_imagen {
-  height: 400px;
-  width: 100%;
-}
-/* FIN MAIN PRINCIPAL */
-
-/* INICIO CÓMO TRABAJAMOS */
-
 .como_trabajamos {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(4, 0, 255),
-    rgb(0, 208, 255)
-  );
+  background-color: #bfd0d0;
+  padding-top: 30px;
 }
 
 .como_trabajamos_titulo {
-  color: aqua;
+  color: rgb(81, 90, 83);
   font-weight: bold;
   line-height: 3;
-  background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
   border-radius: 40%;
-  font-size: 43px;
+  font-size: 55px;
 }
 
 .pedido_titulo {
-  color: aqua;
+  color: #bfd0d0;
   font-weight: bold;
   border-radius: 30px;
   background-image: linear-gradient(
@@ -87,9 +70,8 @@ html {
   transition: height 2s, width 1s;
 }
 .pedido_contenido {
-  color: aqua;
+  color: rgb(28, 100, 59);
   font-size: 30px;
-  background-color: #043caa;
   font-weight: bold;
   padding: 15px;
   border-radius: 40px;
@@ -97,10 +79,10 @@ html {
 }
 
 .delivery_contenedor {
-  text-align: start;
+  margin: 50px;
 }
 .delivery_titulo {
-  color: aqua;
+  color: #bfd0d0;
   font-weight: bold;
   border-radius: 30px;
   background-image: linear-gradient(
@@ -109,7 +91,6 @@ html {
     rgb(4, 0, 255)
   );
   line-height: 3;
-  padding: 15px;
   font-size: 35px;
   text-align: center;
 }
@@ -118,17 +99,20 @@ html {
   margin: 15px;
 }
 .delivery_contenido {
-  color: aqua;
+  color: rgb(28, 100, 59);
   font-size: 30px;
-  background-color: #043caa;
   font-weight: bold;
   border-radius: 40px;
   padding: 15px;
   text-align: center;
 }
 
+.takeaway_contenedor {
+  margin: 50px;
+}
+
 .takeaway_titulo {
-  color: aqua;
+  color: #bfd0d0;
   font-weight: bold;
   border-radius: 30px;
   background-image: linear-gradient(
@@ -138,7 +122,6 @@ html {
   );
   text-align: center;
   line-height: 3;
-  padding: 15px;
   font-size: 35px;
 }
 .takeaway_imagen {
@@ -146,20 +129,25 @@ html {
 }
 
 .takeaway_contenido {
-  color: aqua;
+  color: rgb(28, 100, 59);
   font-size: 30px;
-  background-color: #043caa;
   font-weight: bold;
   border-radius: 40px;
   text-align: center;
   padding: 15px;
 }
 .pedilo_ahora_contenedor {
+  margin-top: 400px;
+  margin-left: 300px;
   text-align: center;
 }
 .pedilo_ahora {
-  background-image: linear-gradient(to bottom, #c33e92, rgb(4, 0, 255));
-  color: aqua;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(28, 100, 59),
+    rgb(4, 0, 255)
+  );
+  color: #bfd0d0;
   font-size: 40px;
   padding: 20px;
   border-radius: 45px;
@@ -180,63 +168,17 @@ html {
 }
 /* FIN CÓMO TRABAJAMOS */
 
-/* INICIO PROMOCIONES */
-.promociones_principal {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 208, 255),
-    rgb(4, 0, 255)
-  );
-}
-
-.promociones_titulo {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 208, 255),
-    rgb(4, 0, 255)
-  );
-  font-weight: bold;
-  line-height: 3;
-  text-align: center;
-  color: aqua;
-  border-radius: 10%;
-  padding: 50px;
-  margin: 50px;
-  font-size: 35px;
-}
-
-/* FIN PROMOCIONES */
-
 /* INICIO FOOTER */
 
 .footer_principal {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 208, 255),
-    rgb(4, 0, 255)
-  );
+  background-color: rgb(0, 81, 255);
   color: white;
   font-size: medium;
   padding: 30px;
-  display: grid;
-  grid-template-areas:
-    "logo redes"
-    "texto1 texto2";
-  grid-template-columns: 1f 1fr;
-  grid-template-rows: 1fr;
 }
-.footer_farmacia {
-  display: grid;
-  grid-template-areas:
-    "logo"
-    "texto1";
-  grid-template-columns: 1f 1fr;
-  grid-template-rows: 1fr;
-  width: 100px;
-}
+
 .footer_principal_imagen_logo {
   border-radius: 40%;
-  grid-template-columns: logo;
   width: 5vw;
 
   .footer_instagram {
@@ -249,7 +191,9 @@ html {
   }
 }
 .footer_principal_texto_contacto {
-  font-size: 20px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #bfd0d0;
 }
 
 .fOOter_principal_imagen_redes {
@@ -263,107 +207,203 @@ html {
   width: 5vw;
 }
 .footer_principal_texto_instagram {
-  font-size: 20px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #bfd0d0;
 }
+/* FIN FOOTER */
+/* Inicio MAX-768px */
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 768px) {
+  .whatsapp  {
+    bottom: 60px;
+    right: 60px !important;
+    
+  }
   .navegacion_principal_header_logo {
-    width: 15%;
-  }
+    width: 100px;
 
-  .navegacion_principal_header {
-    background-color: blue;
-    position: fixed;
-    display: grid;
-    grid-template-areas: "logo nav";
-    z-index: 99;
   }
-
-  .navegacion_principal_header_logo {
-    grid-area: logo;
-    border-radius: 30%;
-    padding: 6px;
+  
+  .carousel-item {
+    height: 300px;
   }
-
-  .titulo_nav {
-    text-align: center;
-    border-radius: 50px;
-    padding: 15px;
-    margin: 5px;
-    color: white;
-    font-size: 15px;
-    width: 50%;
-  }
-
-  .footer_principal_texto_instagram {
-    color: aqua;
-    font-weight: bold;
-    font-size: 10px;
-    grid-area: texto2;
-    text-align: start;
-    padding-top: 10px;
-  }
-  .footer_principal_texto_contacto {
-    color: aqua;
-    font-weight: bold;
-    font-size: 10px;
-    grid-area: texto1;
-    padding-top: 10px;
-  }
-  .main_header_principal_imagen {
-    height: 175px;
-  }
-
   .como_trabajamos_titulo {
-    font-size: 25px;
+    font-size: 35px;
+    padding-left: 15px;
   }
 
   .pedido_titulo {
-    font-size: 18px;
+    font-size: 25px;
+    width: 50%;
+    margin-left: 50px;
   }
   .pedido_imagen {
-    width: 250px;
+    width: 50%;
+    margin-left: 55px;
+  }
+  .pedido_contenido {
+    font-size: 20px;
+    width: 60%;
+  }
+
+  .delivery_titulo {
+    font-size: 25px;
+    width: 50%;
+    margin-left: 50px;
+  }
+  .delivery_imagen {
+    width: 50%;
+    margin-left: 55px;
+  }
+  .delivery_contenido {
+    font-size: 20px;
+    width: 60%;
+  }
+
+  .takeaway_titulo {
+    font-size: 25px;
+    width: 50%;
+    margin-left: 50px;
+  }
+  .takeaway_imagen {
+    width: 50%;
+    margin-left: 55px;
+  }
+
+  .takeaway_contenido {
+    font-size: 20px;
+    width: 60%;
+  }
+  .pedilo_ahora_contenedor {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+  }
+  .pedilo_ahora {
+    width: 50%;
+    font-size: 25px;
+  }
+
+  .footer_principal_imagen_logo {
+    border-radius: 40%;
+    width: 5vw;
+
+    .footer_instagram {
+      display: grid;
+      grid-template-areas:
+        "redes1 redes2"
+        "texto2";
+      grid-template-columns: 1f 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+  .footer_principal_texto_contacto {
+    font-size: 10px;
+  }
+
+  .fOOter_principal_imagen_redes {
+    border-radius: 40%;
+    grid-area: redes1;
+    width: 5vw;
+  }
+  .fOOter_principal_imagen_redes {
+    border-radius: 40%;
+    grid-area: redes2;
+    width: 5vw;
+  }
+  .footer_principal_texto_instagram {
+    font-size: 10px;
+    font-weight: bold;
+    color: #bfd0d0;
+  }
+}
+/* Fin MAX-768px */
+
+/* Inicio MAX-376px */
+@media only screen and (max-width: 376px) {
+
+  .whatsapp {
+    right: 20px !important;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+  }
+
+.titulo_nav {
+  font-size: 14px !important;
+  
+    }
+
+.navegacion_principal_header_logo{
+      width: 50px !important;
+
+    }
+  .carousel-item {
+    height: 150px;
+    margin-top: 50px;
+  }
+  .como_trabajamos_titulo {
+    font-size: 20px;
+  }
+  .pedido_contenedor{
+    margin: 10px 0px !important;
+  }
+  .pedido_titulo {
+    font-size: 15px;
+  }
+  .pedido_imagen {
+    margin-right: 20px;
   }
   .pedido_contenido {
     font-size: 15px;
+    margin-left: 30px;
   }
-
-  .delivery_contenedor {
-    text-align: start;
+  .delivery_contenedor{
+    margin: 10px 0px;
   }
   .delivery_titulo {
-    font-size: 18px;
+    font-size: 15px;
   }
   .delivery_imagen {
-    width: 250px;
+    margin-right: 20px;
   }
   .delivery_contenido {
     font-size: 15px;
+    margin-left: 30px;
   }
-
-  .takeaway_contenedor {
-    margin-right: 15px;
+  .takeaway_contenedor{
+    margin: 10px 0px;
   }
   .takeaway_titulo {
-    font-size: 18px;
+    font-size: 15px;
   }
   .takeaway_imagen {
-    width: 250px;
+    margin-right: 20px;
   }
 
   .takeaway_contenido {
     font-size: 15px;
+    margin-left: 30px;
   }
   .pedilo_ahora_contenedor {
     text-align: center;
+    margin: 15px 0px;
   }
   .pedilo_ahora {
-    font-size: 28px;
+    font-size: 18px;
+
+    
   }
-  .promociones_titulo {
-    font-size: 20px;
-    padding: 30px;
-    margin: 20px;
-    width: 50%;
+  .footer_principal_texto_instagram {
+    font-size: 6px;
+    padding-top: 2px;
   }
+  .footer_principal_texto_contacto {
+    font-size: 6px;
+    padding-top: 2px;
+  }
+
+/* Fin MAX-376px */
+
 }

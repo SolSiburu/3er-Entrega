@@ -4,87 +4,75 @@
   font: 400;
   text-align: center;
   line-height: 6;
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 200, 255),
-    rgb(94, 93, 93)
-  );
-  height: 130vh;
+  background-color: #bfd0d0;
+  height: 110vh;
 }
 .card-body {
   background-color: burlywood;
 }
+
 .card-title {
   color: blue;
   border-radius: 50%;
   font-weight: bold;
   font-size: 35px;
 }
-.card-text {
-  font-size: 25px;
-  line-height: 30px;
-}
-.seccion_cabello {
+
+.seccion_1 {
   padding-top: 300px;
 }
-.seccion_bebes {
-  padding-top: 300px;
+.seccion_2 {
+  padding-top: 100px;
 }
-.seccion_higiene_bucal {
-  padding-top: 20px;
+.card-img-top_01 {
+  height: 400px;
 }
-.seccion_higiene_personal {
-  padding-top: 300px;
-}
-.seccion_mamas {
-  padding-top: 20px;
-}
-.seccion_alimentos_saludables {
-  padding-top: 20px;
-}
+
 /* FINAL PAGINA CUIDADO PERSONAL */
-@media only screen and (max-width: 376px) {
-  
-  .whatsapp {
-    position: fixed;
-    bottom: 30px;
-    width: 50px;
-    height: 50px;
+@media only screen and (max-width: 768px) {
+  .cuidadopersonal_principal {
+    height: 2000vh;
   }
-  
-.navegacion_principal_header {
-  background-color: blue;
-  position: fixed;
-  display: grid;
-  grid-template-areas: "logo nav";
-  z-index:99
+  .seccion_1 {
+    padding-top: 185px;
+  }
+  .seccion_2 {
+    padding-top: 185px;
+  }
 }
-.navegacion_principal_header_logo {
-  grid-area: logo;
-  width: 10%;
-  border-radius: 30%;
-  padding: 6px;
-}
+@media only screen and (max-width: 376px) {
 
-.titulo_nav {
-  text-align: center;
-  border-radius: 50px;
-  padding: 2 0px;
-  margin: 20px;
-  color: white;
-}
-.nav-item {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.navbar_name{
-color: white;
-}
+  .navegacion_principal_header {
+    background-color: blue;
+    position: fixed;
+    display: grid;
+    grid-template-areas: "logo nav";
+    z-index: 99;
+  }
+  .navegacion_principal_header_logo {
+    grid-area: logo;
+    width: 10%;
+    border-radius: 30%;
+    padding: 6px;
+  }
 
+  .titulo_nav {
+    text-align: center;
+    border-radius: 50px;
+    padding: 2 0px;
+    margin: 20px;
+    color: white;
+  }
+  .nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .navbar_name {
+    color: white;
+  }
 
-  
   .cuidadopersonal_principal {
     font: 400;
     text-align: center;
@@ -107,22 +95,15 @@ color: white;
     font-size: 15px;
     line-height: 13px;
   }
-  .seccion_cabello {
-    padding-top: 150px;
+  .cuidadopersonal_principal {
+    height: 800vh;
   }
-  .seccion_bebes {
-    padding-top: 50px;
+  .seccion_1 {
+    padding-top: 185px;
+    width: 150px;
   }
-  .seccion_higiene_bucal {
-    padding-top: 50px;
+  .seccion_2 {
+    padding-top: 185px;
   }
-  .seccion_higiene_personal {
-    padding-top: 50px;
-  }
-  .seccion_mamas {
-    padding-top: 50px;
-  }
-  .seccion_alimentos_saludables {
-    padding-top: 50px;
-  }
+
 }

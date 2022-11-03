@@ -8396,56 +8396,44 @@ html {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
 
 /* FIN CARACTERISTICAS GENERALES */
+/* INICIO CÓMO TRABAJAMOS */
 .whatsapp {
   position: fixed;
   bottom: 40px;
-  right: 15px; }
+  right: 65px; }
 
 .navegacion_principal_header {
-  background-color: blue;
-  position: fixed;
-  display: grid;
-  grid-template-areas: "logo nav";
-  z-index: 99; }
+  background-color: #0051ff; }
 
 .navegacion_principal_header_logo {
-  grid-area: logo;
-  width: 10%;
+  width: 160px;
   border-radius: 30%;
   padding: 6px; }
 
 .titulo_nav {
   text-align: center;
   border-radius: 50px;
-  padding: 18px;
-  margin: 20px;
-  color: 0 !important;
-  background-color: aqua;
-  font-size: 25px; }
+  margin: 30px;
+  color: white !important;
+  font-weight: bold;
+  font-size: 10px !important; }
 
-.navbar_name {
-  color: white; }
+.carousel-item {
+  height: 700px; }
 
-/* FIN HEADER */
-.main_header_principal_imagen {
-  height: 400px;
-  width: 100%; }
-
-/* FIN MAIN PRINCIPAL */
-/* INICIO CÓMO TRABAJAMOS */
 .como_trabajamos {
-  background-image: linear-gradient(to bottom, #0400ff, #00d0ff); }
+  background-color: #bfd0d0;
+  padding-top: 30px; }
 
 .como_trabajamos_titulo {
-  color: aqua;
+  color: #515a53;
   font-weight: bold;
   line-height: 3;
-  background-image: linear-gradient(to bottom, #c33e92, #0400ff);
   border-radius: 40%;
-  font-size: 43px; }
+  font-size: 55px; }
 
 .pedido_titulo {
-  color: aqua;
+  color: #bfd0d0;
   font-weight: bold;
   border-radius: 30px;
   background-image: linear-gradient(to bottom, #00d0ff, #0400ff);
@@ -8459,24 +8447,22 @@ html {
   transition: height 2s, width 1s; }
 
 .pedido_contenido {
-  color: aqua;
+  color: #1c643b;
   font-size: 30px;
-  background-color: #043caa;
   font-weight: bold;
   padding: 15px;
   border-radius: 40px;
   text-align: center; }
 
 .delivery_contenedor {
-  text-align: start; }
+  margin: 50px; }
 
 .delivery_titulo {
-  color: aqua;
+  color: #bfd0d0;
   font-weight: bold;
   border-radius: 30px;
   background-image: linear-gradient(to bottom, #00d0ff, #0400ff);
   line-height: 3;
-  padding: 15px;
   font-size: 35px;
   text-align: center; }
 
@@ -8485,42 +8471,44 @@ html {
   margin: 15px; }
 
 .delivery_contenido {
-  color: aqua;
+  color: #1c643b;
   font-size: 30px;
-  background-color: #043caa;
   font-weight: bold;
   border-radius: 40px;
   padding: 15px;
   text-align: center; }
 
+.takeaway_contenedor {
+  margin: 50px; }
+
 .takeaway_titulo {
-  color: aqua;
+  color: #bfd0d0;
   font-weight: bold;
   border-radius: 30px;
   background-image: linear-gradient(to bottom, #00d0ff, #0400ff);
   text-align: center;
   line-height: 3;
-  padding: 15px;
   font-size: 35px; }
 
 .takeaway_imagen {
   border-radius: 40%; }
 
 .takeaway_contenido {
-  color: aqua;
+  color: #1c643b;
   font-size: 30px;
-  background-color: #043caa;
   font-weight: bold;
   border-radius: 40px;
   text-align: center;
   padding: 15px; }
 
 .pedilo_ahora_contenedor {
+  margin-top: 400px;
+  margin-left: 300px;
   text-align: center; }
 
 .pedilo_ahora {
-  background-image: linear-gradient(to bottom, #c33e92, #0400ff);
-  color: aqua;
+  background-image: linear-gradient(to bottom, #1c643b, #0400ff);
+  color: #bfd0d0;
   font-size: 40px;
   padding: 20px;
   border-radius: 45px;
@@ -8539,43 +8527,15 @@ html {
   align-self: center; }
 
 /* FIN CÓMO TRABAJAMOS */
-/* INICIO PROMOCIONES */
-.promociones_principal {
-  background-image: linear-gradient(to bottom, #00d0ff, #0400ff); }
-
-.promociones_titulo {
-  background-image: linear-gradient(to bottom, #00d0ff, #0400ff);
-  font-weight: bold;
-  line-height: 3;
-  text-align: center;
-  color: aqua;
-  border-radius: 10%;
-  padding: 50px;
-  margin: 50px;
-  font-size: 35px; }
-
-/* FIN PROMOCIONES */
 /* INICIO FOOTER */
 .footer_principal {
-  background-image: linear-gradient(to bottom, #00d0ff, #0400ff);
+  background-color: #0051ff;
   color: white;
   font-size: medium;
-  padding: 30px;
-  display: grid;
-  grid-template-areas: "logo redes" "texto1 texto2";
-  grid-template-columns: 1f 1fr;
-  grid-template-rows: 1fr; }
-
-.footer_farmacia {
-  display: grid;
-  grid-template-areas: "logo" "texto1";
-  grid-template-columns: 1f 1fr;
-  grid-template-rows: 1fr;
-  width: 100px; }
+  padding: 30px; }
 
 .footer_principal_imagen_logo {
   border-radius: 40%;
-  grid-template-columns: logo;
   width: 5vw; }
   .footer_principal_imagen_logo .footer_instagram {
     display: grid;
@@ -8584,7 +8544,9 @@ html {
     grid-template-rows: 1fr; }
 
 .footer_principal_texto_contacto {
-  font-size: 20px; }
+  font-size: 21px;
+  font-weight: bold;
+  color: #bfd0d0; }
 
 .fOOter_principal_imagen_redes {
   border-radius: 40%;
@@ -8597,101 +8559,194 @@ html {
   width: 5vw; }
 
 .footer_principal_texto_instagram {
-  font-size: 20px; }
+  font-size: 21px;
+  font-weight: bold;
+  color: #bfd0d0; }
 
-@media only screen and (max-width: 376px) {
+/* FIN FOOTER */
+/* Inicio MAX-768px */
+@media only screen and (max-width: 768px) {
+  .whatsapp {
+    bottom: 60px;
+    right: 60px !important; }
   .navegacion_principal_header_logo {
-    width: 15%; }
-  .navegacion_principal_header {
-    background-color: blue;
-    position: fixed;
-    display: grid;
-    grid-template-areas: "logo nav";
-    z-index: 99; }
-  .navegacion_principal_header_logo {
-    grid-area: logo;
-    border-radius: 30%;
-    padding: 6px; }
-  .titulo_nav {
-    text-align: center;
-    border-radius: 50px;
-    padding: 15px;
-    margin: 5px;
-    color: white;
-    font-size: 15px;
-    width: 50%; }
-  .footer_principal_texto_instagram {
-    color: aqua;
-    font-weight: bold;
-    font-size: 10px;
-    grid-area: texto2;
-    text-align: start;
-    padding-top: 10px; }
-  .footer_principal_texto_contacto {
-    color: aqua;
-    font-weight: bold;
-    font-size: 10px;
-    grid-area: texto1;
-    padding-top: 10px; }
-  .main_header_principal_imagen {
-    height: 175px; }
+    width: 100px; }
+  .carousel-item {
+    height: 300px; }
   .como_trabajamos_titulo {
-    font-size: 25px; }
+    font-size: 35px;
+    padding-left: 15px; }
   .pedido_titulo {
-    font-size: 18px; }
+    font-size: 25px;
+    width: 50%;
+    margin-left: 50px; }
   .pedido_imagen {
-    width: 250px; }
+    width: 50%;
+    margin-left: 55px; }
   .pedido_contenido {
-    font-size: 15px; }
-  .delivery_contenedor {
-    text-align: start; }
-  .delivery_titulo {
-    font-size: 18px; }
-  .delivery_imagen {
-    width: 250px; }
-  .delivery_contenido {
-    font-size: 15px; }
-  .takeaway_contenedor {
-    margin-right: 15px; }
-  .takeaway_titulo {
-    font-size: 18px; }
-  .takeaway_imagen {
-    width: 250px; }
-  .takeaway_contenido {
-    font-size: 15px; }
-  .pedilo_ahora_contenedor {
-    text-align: center; }
-  .pedilo_ahora {
-    font-size: 28px; }
-  .promociones_titulo {
     font-size: 20px;
-    padding: 30px;
-    margin: 20px;
-    width: 50%; } }
+    width: 60%; }
+  .delivery_titulo {
+    font-size: 25px;
+    width: 50%;
+    margin-left: 50px; }
+  .delivery_imagen {
+    width: 50%;
+    margin-left: 55px; }
+  .delivery_contenido {
+    font-size: 20px;
+    width: 60%; }
+  .takeaway_titulo {
+    font-size: 25px;
+    width: 50%;
+    margin-left: 50px; }
+  .takeaway_imagen {
+    width: 50%;
+    margin-left: 55px; }
+  .takeaway_contenido {
+    font-size: 20px;
+    width: 60%; }
+  .pedilo_ahora_contenedor {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px; }
+  .pedilo_ahora {
+    width: 50%;
+    font-size: 25px; }
+  .footer_principal_imagen_logo {
+    border-radius: 40%;
+    width: 5vw; }
+    .footer_principal_imagen_logo .footer_instagram {
+      display: grid;
+      grid-template-areas: "redes1 redes2" "texto2";
+      grid-template-columns: 1f 1fr;
+      grid-template-rows: 1fr; }
+  .footer_principal_texto_contacto {
+    font-size: 10px; }
+  .fOOter_principal_imagen_redes {
+    border-radius: 40%;
+    grid-area: redes1;
+    width: 5vw; }
+  .fOOter_principal_imagen_redes {
+    border-radius: 40%;
+    grid-area: redes2;
+    width: 5vw; }
+  .footer_principal_texto_instagram {
+    font-size: 10px;
+    font-weight: bold;
+    color: #bfd0d0; } }
+
+/* Fin MAX-768px */
+/* Inicio MAX-376px */
+@media only screen and (max-width: 376px) {
+  .whatsapp {
+    right: 20px !important;
+    bottom: 40px;
+    width: 50px;
+    height: 50px; }
+  .titulo_nav {
+    font-size: 14px !important; }
+  .navegacion_principal_header_logo {
+    width: 50px !important; }
+  .carousel-item {
+    height: 150px;
+    margin-top: 50px; }
+  .como_trabajamos_titulo {
+    font-size: 20px; }
+  .pedido_contenedor {
+    margin: 10px 0px !important; }
+  .pedido_titulo {
+    font-size: 15px; }
+  .pedido_imagen {
+    margin-right: 20px; }
+  .pedido_contenido {
+    font-size: 15px;
+    margin-left: 30px; }
+  .delivery_contenedor {
+    margin: 10px 0px; }
+  .delivery_titulo {
+    font-size: 15px; }
+  .delivery_imagen {
+    margin-right: 20px; }
+  .delivery_contenido {
+    font-size: 15px;
+    margin-left: 30px; }
+  .takeaway_contenedor {
+    margin: 10px 0px; }
+  .takeaway_titulo {
+    font-size: 15px; }
+  .takeaway_imagen {
+    margin-right: 20px; }
+  .takeaway_contenido {
+    font-size: 15px;
+    margin-left: 30px; }
+  .pedilo_ahora_contenedor {
+    text-align: center;
+    margin: 15px 0px; }
+  .pedilo_ahora {
+    font-size: 18px; }
+  .footer_principal_texto_instagram {
+    font-size: 6px;
+    padding-top: 2px; }
+  .footer_principal_texto_contacto {
+    font-size: 6px;
+    padding-top: 2px; }
+  /* Fin MAX-376px */ }
 
 /* INICIO PAGINA CONTACTOS */
 .seccion_contactos {
   padding-top: 300px;
   font: 25px;
-  background-image: linear-gradient(to right, #ff00a6, #00c8ff);
+  background-color: #bfd0d0;
   height: 1200px; }
 
 .form-label {
-  font-size: 30px; }
+  font-size: 40px; }
 
 .form-control {
-  font-size: 20px; }
+  height: 50px; }
+
+.formulario_contacto {
+  align-self: center; }
+
+.enviar {
+  font-size: 35px; }
+
+.form-check-label {
+  font-size: 25px; }
+
+.imagen_contactanos {
+  border-radius: 30%;
+  width: 200px;
+  height: 330px; }
+
+@media only screen and (max-width: 768px) {
+  .imagen_contactanos {
+    width: 250px;
+    margin-top: 20px; }
+  .seccion_contactos {
+    padding: 40px; } }
 
 @media only screen and (max-width: 376px) {
+  .titulo_nav {
+    font-size: 10px !important; }
   .seccion_contactos {
     padding-top: 120px;
-    font: 25px;
-    background-image: linear-gradient(to right, #ff00a6, #00c8ff);
+    font: 15px;
+    background-color: #bfd0d0;
     height: 700px; }
   .form-label {
     font-size: 15px; }
   .form-control {
-    font-size: 2px; } }
+    font-size: 2px; }
+  .titulos {
+    font-size: 15px; }
+  .titulos_sub {
+    font-size: 10px; }
+  .imagen_contactanos {
+    width: 150px;
+    height: 150px;
+    padding-top: 20px; } }
 
 /* FIN PAGINA CONTACTOS */
 /* INICIO PAGINA CUIDADO PERSONAL */
@@ -8699,8 +8754,8 @@ html {
   font: 400;
   text-align: center;
   line-height: 6;
-  background-image: linear-gradient(to right, #00c8ff, #5e5d5d);
-  height: 130vh; }
+  background-color: #bfd0d0;
+  height: 110vh; }
 
 .card-body {
   background-color: burlywood; }
@@ -8711,35 +8766,25 @@ html {
   font-weight: bold;
   font-size: 35px; }
 
-.card-text {
-  font-size: 25px;
-  line-height: 30px; }
-
-.seccion_cabello {
+.seccion_1 {
   padding-top: 300px; }
 
-.seccion_bebes {
-  padding-top: 300px; }
+.seccion_2 {
+  padding-top: 100px; }
 
-.seccion_higiene_bucal {
-  padding-top: 20px; }
-
-.seccion_higiene_personal {
-  padding-top: 300px; }
-
-.seccion_mamas {
-  padding-top: 20px; }
-
-.seccion_alimentos_saludables {
-  padding-top: 20px; }
+.card-img-top_01 {
+  height: 400px; }
 
 /* FINAL PAGINA CUIDADO PERSONAL */
+@media only screen and (max-width: 768px) {
+  .cuidadopersonal_principal {
+    height: 2000vh; }
+  .seccion_1 {
+    padding-top: 185px; }
+  .seccion_2 {
+    padding-top: 185px; } }
+
 @media only screen and (max-width: 376px) {
-  .whatsapp {
-    position: fixed;
-    bottom: 30px;
-    width: 50px;
-    height: 50px; }
   .navegacion_principal_header {
     background-color: blue;
     position: fixed;
@@ -8776,50 +8821,57 @@ html {
   .card-text {
     font-size: 15px;
     line-height: 13px; }
-  .seccion_cabello {
-    padding-top: 150px; }
-  .seccion_bebes {
-    padding-top: 50px; }
-  .seccion_higiene_bucal {
-    padding-top: 50px; }
-  .seccion_higiene_personal {
-    padding-top: 50px; }
-  .seccion_mamas {
-    padding-top: 50px; }
-  .seccion_alimentos_saludables {
-    padding-top: 50px; } }
+  .cuidadopersonal_principal {
+    height: 800vh; }
+  .seccion_1 {
+    padding-top: 185px;
+    width: 150px; }
+  .seccion_2 {
+    padding-top: 185px; } }
 
 /* INICIO PAGINA MEDICAMENTOS */
 .medicamentos_principal {
-  background-image: linear-gradient(to right, #ff00a6, #00c8ff);
+  background-color: #bfd0d0;
   padding-bottom: 25px; }
 
 .medicamentos_titulo {
   font-size: 30px;
-  color: blue;
+  color: green;
   font-weight: bold;
-  padding: 18px;
   border-radius: 40%;
-  background-color: aqua;
   text-align: center;
-  margin-top: 200px; }
+  margin-top: 300px; }
 
-.imagen_medicamentos {
+.imagen_medicamentos_01, .imagen_medicamentos_02, .imagen_medicamentos_03 {
   width: 500px;
   border-radius: 30%;
   margin-top: 150px; }
 
 .descripcion_medicamentos {
   font-size: 30px;
-  color: aqua;
+  color: blue;
   font-weight: bold; }
+
+@media only screen and (max-width: 768px) {
+  .medicamentos_titulo {
+    margin-top: 200px; }
+  .descripcion_medicamentos {
+    font-size: 15px; }
+  .imagen_medicamentos_01 {
+    width: 500px;
+    border-radius: 30%;
+    margin-top: 110px; }
+  .imagen_medicamentos_02, .imagen_medicamentos_03 {
+    width: 500px;
+    border-radius: 30%;
+    margin-top: 150px; } }
 
 @media only screen and (max-width: 376px) {
   .medicamentos_titulo {
     font-size: 20px;
     width: 50%;
-    margin-top: 75px; }
-  .imagen_medicamentos {
+    margin-top: 50px !important; }
+  .imagen_medicamentos_01, .imagen_medicamentos_02, .imagen_medicamentos_03 {
     width: 500px;
     border-radius: 30%;
     margin-top: 15px; }
@@ -8827,15 +8879,19 @@ html {
     font-size: 15px; } }
 
 /* INICIO PAGINA NOSOTROS */
+.titulo_nav {
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 25px !important; }
+
 .nosotros {
-  height: 130vh;
-  background-color: #c33e92;
-  background-image: linear-gradient(to right, #ff00a6, #00c8ff); }
+  height: 100vh;
+  background-color: #bfd0d0; }
 
 .nosotros_titulo {
   line-height: 3;
   font-size: 45px;
-  color: aqua;
+  color: #1c643b;
   text-align: center;
   padding-top: 250px; }
 
@@ -8848,24 +8904,56 @@ html {
   margin: 50px 50px 0px 50px;
   text-align: center; }
 
+.frente_farmacia {
+  width: 350px;
+  height: 350px;
+  margin-left: 380px;
+  margin-top: 35px; }
+
+.footer_principal_imagen_logo {
+  width: 5vw !important; }
+
+.fOOter_principal_imagen_redes {
+  width: 5vw !important; }
+
 /* FIN PAGINA NOSOTROS */
-@media only screen and (max-width: 376px) {
+/* Inicio Max-768px */
+@media only screen and (max-width: 768px) {
+  .whatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 40px; }
   .nosotros {
-    height: 100vh;
-    background-color: #c33e92;
-    background-image: linear-gradient(to right, #ff00a6, #00c8ff); }
+    height: 100vh; }
   .nosotros_titulo {
-    line-height: 3;
-    font-size: 30px;
-    color: aqua;
-    text-align: center;
+    font-size: 25px;
+    padding-top: 200px; }
+  .nosotros_contenido_p {
+    font: bold;
+    font-size: 12px;
+    line-height: 2;
+    margin: 0px; }
+  .frente_farmacia {
+    margin-left: 180px;
+    width: 50%; } }
+
+@media only screen and (max-width: 376px) {
+  .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 15px; }
+  .nosotros_titulo {
+    font-size: 25px;
     padding-top: 90px; }
   .nosotros_contenido_p {
     font-size: 15px;
-    line-height: 18px;
-    color: wheat; }
+    line-height: 18px; }
   .titulo_nav {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .frente_farmacia {
+    width: 50%;
+    height: 50%;
+    margin-left: 100px; } }
 
 .padding-1 {
   padding: 1rem; }

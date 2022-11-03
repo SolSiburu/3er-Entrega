@@ -13,19 +13,19 @@
   </head>
   <body>
     <header class="navegacion_principal_header container-fluid">  
-      <nav class="navbar navbar-expand-lg" >
-        <div class="container-fluid ">
+      <nav class="navbar navbar-expand-lg row" >
+        <div class="contenedor_logo col-6 ">
           <img
-        class="navegacion_principal_header_logo  "
-        src="./img/LOGOMCCLYMONT.png"
+        class="navegacion_principal_header_logo"
+        src="./img/LOGOMCCLYMONT_zine.png"
         alt="LOGO MC CLYMONT"   
       />        
       </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler col-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active titulo_nav" aria-current="page" href="../index.html">INICIO</a>
               </li>
@@ -55,12 +55,13 @@
           height="100"
         />
       </div>
-    </header>
+          <!-- Fin Navegador -->
+        </header>
     <!-- Fin Navegador -->
     <main class=" nosotros container-fluid">
       <div class="row justify-content-center">
-        <h1 class="nosotros_titulo col-md-5 ">Sobre nosotros</h1>
-        <p class="nosotros_contenido_p col-md-8">
+        <h1 class="nosotros_titulo col-lg-5 ">Sobre nosotros</h1>
+        <p class="nosotros_contenido_p col-sm-8 col-lg-8">
           Farmacia MC CLYMONT, ubicada en la zona de pichincha, Salta esquina
           Santiago (Rosario), con una trayectoria de más de 50 años en el rubro,
           es reconocida por la excelencia de servicio, la responsabilidad y la
@@ -75,35 +76,45 @@
           dermocosméticos con grandes promociones, lo cual la hizo crecer a lo
           largo del tiempo siendo una de las farmacias que más se especializó en
           esa área en la ciudad.
-        </p>          
+        </p>
+        <div class="col-lg-6">
+        <img class="frente_farmacia col-lg-6 " src="./img/FrenteFarmacia.png" alt="nuestra fachada" />>          
+        </div>       
       </div>
     </main>
         <!-- Inicio Footer -->
-        <footer class="footer_principal">
-          <div class="footer_farmacia">
+        <footer class="footer_principal container-fluid">
+          <div class="row">
+            <div class="footer_farmacia col-6 container-fluid">
+              <img
+              class="footer_principal_imagen_logo col-6"
+              src="./img/LOGOMCCLYMONT.png"
+              alt="LOGO MC CLYMONT"
+            />
+            <p class="footer_principal_texto_contacto col-6">
+              Salta 2398 Rosario Santa Fe Tel.0341-4392110</p>
+              <p class="footer_principal_texto_contacto col-6">
+              Horarios de Atención    
+              Lunes a Viernes : 08:30 a 13:00 16:30 a 20:30 
+              Sabados : 09:00 a 13:00.</p>
+              <p class="footer_principal_texto_contacto col-6">
+              Visitá nuestra Tienda Online</p>
+            </div>
+            <div class="footer_instagram col-6 container-fluid">
+              <img
+              class="fOOter_principal_imagen_redes col-6 "
+              src="./img//instagram_108043.png"
+              alt="logo redes sociales"
+            />
             <img
-            class="footer_principal_imagen_logo"
-            src="./img/LOGOMCCLYMONT.png"
-            alt="LOGO MC CLYMONT"
-          />
-          <p class="footer_principal_texto_contacto">
-            Salta 2398 Rosario Santa Fe Tel.0341-4392110
-          </p>
-          </div>
-          <div class="footer_instagram">
-            <img
-            class="fOOter_principal_imagen_redes "
-            src="./img//instagram_108043.png"
+            class="fOOter_principal_imagen_redes col-6"
+            src="./img/facebook_108044.png"
             alt="logo redes sociales"
           />
-          <img
-          class="fOOter_principal_imagen_redes"
-          src="./img/facebook_108044.png"
-          alt="logo redes sociales"
-        />
-          <p class="footer_principal_texto_instagram">Seguinos</p>
-          </div>        
-        </footer>
+            <p class="footer_principal_texto_instagram">Seguinos para conocer nuestras promociones vigentes</p>
+            </div>    
+          </div>
+          </footer>
         <!-- Fin Footer -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>

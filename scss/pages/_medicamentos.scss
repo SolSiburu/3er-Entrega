@@ -1,27 +1,21 @@
   /* INICIO PAGINA MEDICAMENTOS */
   
   .medicamentos_principal {
-    background-image: linear-gradient(
-      to right,
-      rgb(255, 0, 166),
-      rgb(0, 200, 255)
-    );
+    background-color: #bfd0d0;
     padding-bottom: 25px;
 
   }
   
   .medicamentos_titulo {
     font-size: 30px;
-    color: blue;
+    color: green;
     font-weight: bold;
-    padding: 18px;
     border-radius: 40%;
-    background-color: aqua;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 300px;
   }
 
-  .imagen_medicamentos{
+  .imagen_medicamentos_01, .imagen_medicamentos_02,.imagen_medicamentos_03{
     width: 500px;
     border-radius: 30%;
     margin-top: 150px;
@@ -31,10 +25,30 @@
 
   .descripcion_medicamentos {
     font-size: 30px;
-    color: aqua;
+    color: blue;
     font-weight: bold;
     
     
+  }
+  @media only screen and (max-width: 768px){
+    .medicamentos_titulo {
+      margin-top: 200px;
+    }
+    
+    .descripcion_medicamentos {
+      font-size: 15px;
+    }
+    .imagen_medicamentos_01{
+      width: 500px;
+      border-radius: 30%;
+      margin-top: 110px;
+    }
+    .imagen_medicamentos_02,.imagen_medicamentos_03 {
+      width: 500px;
+      border-radius: 30%;
+      margin-top: 150px;
+    }
+
   }
 
   @media only screen and (max-width: 376px) {
@@ -43,11 +57,12 @@
   .medicamentos_titulo {
     font-size: 20px;
     width: 50%;
-    margin-top: 75px;
+    margin-top: 50px !important;
+    
     }
 
   
-  .imagen_medicamentos{
+  .imagen_medicamentos_01, .imagen_medicamentos_02, .imagen_medicamentos_03{
     width: 500px;
     border-radius: 30%;
     margin-top: 15px;

@@ -1,45 +1,70 @@
+/* INICIO PAGINA CONTACTOS */
+.seccion_contactos {
+  padding-top: 300px;
+  font: 25px;
+  background-color: #bfd0d0;
+  height: 1200px;
+}
+
+.form-label {
+  font-size: 40px;
+}
+.form-control {
+  height: 50px;
+}
+.formulario_contacto {
+  align-self: center;
+}
+.enviar{
+  font-size: 35px;
+}
+
+.form-check-label {
+  font-size: 25px;
+}
+.imagen_contactanos {
+  border-radius: 30%;
+  width: 200px;
+  height: 330px;
   
-  /* INICIO PAGINA CONTACTOS */
-  .seccion_contactos {
-    padding-top: 300px;
-    font: 25px;
-    background-image: linear-gradient(
-      to right,
-      rgb(255, 0, 166),
-      rgb(0, 200, 255)
-    );
-    height: 1200px;
+}
+
+@media only screen and (max-width: 768px){
+  .imagen_contactanos {
+    width: 250px;
+    margin-top: 20px;
+    
   }
-
-  .form-label{
-    font-size: 30px;
-
+  .seccion_contactos{
+    padding: 40px;
   }
-  .form-control{
-    font-size: 20px;
-
+}
+@media only screen and (max-width: 376px) {
+  .titulo_nav{
+    font-size: 10px !important;
   }
-  @media only screen and (max-width: 376px) {
-
   .seccion_contactos {
     padding-top: 120px;
-    font: 25px;
-    background-image: linear-gradient(
-      to right,
-      rgb(255, 0, 166),
-      rgb(0, 200, 255)
-    );
+    font: 15px;
+    background-color: #bfd0d0;
     height: 700px;
   }
-  .form-label{
+  .form-label {
     font-size: 15px;
-
   }
-  .form-control{
+  .form-control {
     font-size: 2px;
-
   }
-  
+  .titulos{
+    font-size: 15px;
   }
-  /* FIN PAGINA CONTACTOS */
-  
+  .titulos_sub{
+    font-size: 10px;
+  }
+  .imagen_contactanos{
+    width: 150px;
+    height: 150px;
+    padding-top: 20px;
+  }
+}
+/* FIN PAGINA CONTACTOS */

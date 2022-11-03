@@ -1,20 +1,18 @@
 /* INICIO PAGINA NOSOTROS */
-
-
+.titulo_nav {
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 25px !important;
+}
 
 .nosotros {
-  height: 130vh;
-  background-color: #c33e92;
-  background-image: linear-gradient(
-    to right,
-    rgb(255, 0, 166),
-    rgb(0, 200, 255)
-  );
+  height: 100vh;
+  background-color: #bfd0d0;
 }
 .nosotros_titulo {
   line-height: 3;
   font-size: 45px;
-  color: aqua;
+  color: rgb(28, 100, 59);
   text-align: center;
   padding-top: 250px;
 }
@@ -27,32 +25,73 @@
   margin: 50px 50px 0px 50px;
   text-align: center;
 }
+.frente_farmacia {
+  width: 350px;
+  height: 350px;
+  margin-left: 380px;
+  margin-top: 35px;
+}
+
+.footer_principal_imagen_logo {
+  width: 5vw !important;
+}
+.fOOter_principal_imagen_redes {
+  width: 5vw !important;
+}
 /* FIN PAGINA NOSOTROS */
-@media only screen and (max-width: 376px) {
+/* Inicio Max-768px */
+
+@media only screen and (max-width: 768px) {
+  .whatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+  }
 
   .nosotros {
     height: 100vh;
-    background-color: #c33e92;
-    background-image: linear-gradient(
-      to right,
-      rgb(255, 0, 166),
-      rgb(0, 200, 255)
-    );
   }
   .nosotros_titulo {
-    line-height: 3;
-    font-size: 30px;
-    color: aqua;
-    text-align: center;
+    font-size: 25px;
+    padding-top: 200px;
+  
+  }
+  .nosotros_contenido_p {
+    font: bold;
+    font-size: 12px;
+    line-height: 2;
+    margin: 0px;
+  }
+  .frente_farmacia {
+    margin-left: 180px;
+    width: 50%;
+    
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+  }
+
+  .nosotros_titulo {
+    font-size: 25px;
     padding-top: 90px;
   }
   .nosotros_contenido_p {
     font-size: 15px;
     line-height: 18px;
-    color: wheat;
+    
   }
   .titulo_nav {
     font-size: 10px;
-
+  }
+  .frente_farmacia {
+    width: 50%;
+    height: 50%;
+    margin-left: 100px;
+    
   }
 }
